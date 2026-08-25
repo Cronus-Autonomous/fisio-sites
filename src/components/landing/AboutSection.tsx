@@ -1,4 +1,4 @@
-import retrato from "@/assets/sueli-retrato.png.asset.json";
+import retrato from "@/assets/sueli-retrato.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
 import { Reveal } from "./Reveal";
@@ -11,7 +11,7 @@ export function AboutSection() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2rem] bg-sand shadow-soft">
               <img
-                src={retrato.url}
+                src={retrato}
                 alt="Sueli Pereira, fisioterapeuta responsável pelo Espaço Sueli Pereira"
                 loading="lazy"
                 className="h-[24rem] w-full object-cover object-top transition-transform duration-700 hover:scale-[1.02] sm:h-[32rem]"
