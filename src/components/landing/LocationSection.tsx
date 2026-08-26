@@ -54,9 +54,7 @@ export function LocationSection() {
                   Um espaço para você se sentir à vontade.
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-cocoa/75">
-                  Aqui o atendimento é respeitoso e individualizado, em um ambiente acolhedor e
-                  seguro — inclusive para pessoas LGBTQ+. Você é bem-vinda e bem-vindo do jeito que
-                  você é.
+                  A Shoyufisio está em uma localização privilegiada e de fácil acesso em Londrina, com estacionamento próprio, inclusive para PCD e idosos, tudo pensando no seu bem-estar e no seu atendimento.
                 </p>
               </div>
             </Reveal>
@@ -65,7 +63,7 @@ export function LocationSection() {
           <Reveal delay={0.06}>
             <div className="h-full overflow-hidden rounded-[2rem] border border-clay/40 shadow-soft">
               <iframe
-                title="Mapa com a localização do Espaço Sueli Pereira em Londrina"
+                title="Mapa com a localização do Clínica Shoyufisio em Londrina"
                 src={business.maps.embedUrl}
                 loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"

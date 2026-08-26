@@ -1,5 +1,5 @@
 import { Compass, Home, Target, UserRound } from "lucide-react";
-import atendimento from "@/assets/atendimento.jpg";
+import atendimento from "@/assets/time.png";
 import { Reveal } from "./Reveal";
 
 const benefits = [

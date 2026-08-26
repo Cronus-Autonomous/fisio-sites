@@ -1,4 +1,4 @@
-import retrato from "@/assets/sueli-retrato.png";
+import retrato from "@/assets/founder.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
 import { Reveal } from "./Reveal";
@@ -12,7 +12,7 @@ export function AboutSection() {
             <div className="overflow-hidden rounded-[2rem] bg-sand shadow-soft">
               <img
                 src={retrato}
-                alt="Sueli Pereira, fisioterapeuta responsável pelo Espaço Sueli Pereira"
+                alt="Fisioterapia, Hidroterapia, Home Care e Pilates em Londrina"
                 loading="lazy"
                 className="h-[24rem] w-full object-cover object-top transition-transform duration-700 hover:scale-[1.02] sm:h-[32rem]"
               />
@@ -26,17 +26,14 @@ export function AboutSection() {
 
         <Reveal delay={0.1}>
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
-            Sobre o espaço
+            Sobre a clínica
           </p>
           <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
             Seu corpo merece ser cuidado por inteiro.
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
-              No Espaço Sueli Pereira, cuidamos da sua saúde e bem-estar de forma integrada.
-              Combinamos fisioterapia especializada com técnicas de estética integrativa para tratar
-              o corpo como um todo — aliviando dores, melhorando a mobilidade e cuidando também da
-              beleza e autoestima.
+              A Shoyufisio é uma clínica de fisioterapia com quase 40 anos de experiência. Nosso objetivo é oferecer fisioterapia de excelência e qualidade, com foco na recuperação, na prevenção e na promoção da saúde e do bem-estar dos nossos pacientes. Queremos te ajudar a construir um futuro sem dores e sem limitações!
             </p>
             <p>
               Nosso atendimento é humanizado, individualizado e focado em resultados reais.

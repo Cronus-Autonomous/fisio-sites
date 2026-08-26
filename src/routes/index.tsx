@@ -16,9 +16,9 @@ import { FloatingWhatsApp } from "@/components/landing/FloatingWhatsApp";
 import { MobileCTA } from "@/components/landing/MobileCTA";
 
 const title =
-  "Espaço Sueli Pereira | Fisioterapia, Massoterapia e Estética Integrativa em Londrina";
+  "Clínica Shoyufisio";
 const description =
-  "Fisioterapia manual, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado no Espaço Sueli Pereira.";
+  "Fisioterapia, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado no Clínica Shoyufisio.";
 
 const jsonLd = {
   "@context": "https://schema.org",

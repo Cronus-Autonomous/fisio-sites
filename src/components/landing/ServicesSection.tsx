@@ -33,7 +33,7 @@ export function ServicesSection() {
             Tratamentos pensados para as necessidades do seu corpo
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Conheça algumas das especialidades do Espaço Sueli Pereira.
+            Conheça algumas das especialidades do Clínica Shoyufisio.
           </p>
         </Reveal>
 

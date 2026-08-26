@@ -10,7 +10,7 @@ const items = [
   {
     icon: Layers,
     title: "Cuidado integrado",
-    text: "Fisioterapia, massoterapia e estética em uma abordagem completa.",
+    text: "Fisioterapia, Hidroterapiae estética em uma abordagem completa.",
   },
   {
     icon: Sparkles,

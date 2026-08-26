@@ -1,10 +1,10 @@
-# Espaço Sueli Pereira Branding
+# Clínica Shoyufisio Branding
 
-CRIAÇÃO DE LANDING PAGE PREMIUM — ESPAÇO SUELI PEREIRA
+CRIAÇÃO DE LANDING PAGE PREMIUM — Clínica Shoyufisio
 
-Crie uma landing page profissional, elegante, moderna, responsiva e orientada à conversão para o Espaço Sueli Pereira, localizado em Londrina — PR.
+Crie uma landing page profissional, elegante, moderna, responsiva e orientada à conversão para o Clínica Shoyufisio, localizado em Londrina — PR.
 
-O negócio atua com Fisioterapia Manual, Massoterapia e Estética Integrativa, oferecendo tratamentos personalizados para dor, tensão muscular, mobilidade, drenagem linfática, lipedema e recuperação pós-operatória.
+O negócio atua com Fisioterapia Manual, Hidroterapiae Home Care e Pilates, oferecendo tratamentos personalizados para dor, tensão muscular, mobilidade, drenagem linfática, lipedema e recuperação pós-operatória.
 
 A página deve transmitir imediatamente:
 
@@ -62,7 +62,7 @@ linguagem visual premium.
 
 Não copie literalmente o layout ou elementos da referência.
 
-Use-a como direção de UX, hierarquia visual e estrutura de conversão, criando uma identidade própria para o Espaço Sueli Pereira.
+Use-a como direção de UX, hierarquia visual e estrutura de conversão, criando uma identidade própria para o Clínica Shoyufisio.
 
 A página final deve parecer um projeto profissional desenvolvido por uma agência premium de branding e UX/UI para uma clínica de saúde e bem-estar.
 
@@ -226,7 +226,7 @@ Criar header fixo/sticky no topo.
 
 Desktop:
 
-logo/nome "Espaço Sueli Pereira";
+logo/nome "Clínica Shoyufisio";
 
 menu:
 
@@ -273,7 +273,7 @@ Estrutura:
 
 Eyebrow
 
-"Fisioterapia Manual • Massoterapia • Estética Integrativa"
+"Fisioterapia Manual • Hidroterapia• Home Care e Pilates"
 
 Headline principal
 
@@ -299,7 +299,7 @@ Ao clicar, direcionar para WhatsApp com mensagem pré-preenchida.
 
 Exemplo:
 
-"Olá, gostaria de agendar uma avaliação no Espaço Sueli Pereira."
+"Olá, gostaria de agendar uma avaliação no Clínica Shoyufisio."
 
 CTA secundário
 
@@ -335,7 +335,7 @@ cuidado;
 
 profissionalismo.
 
-Se imagens reais do Espaço Sueli Pereira forem fornecidas posteriormente, priorizá-las sobre imagens genéricas.
+Se imagens reais do Clínica Shoyufisio forem fornecidas posteriormente, priorizá-las sobre imagens genéricas.
 
 8. MICRO-BLOCO DE CONFIANÇA ABAIXO DO HERO
 
@@ -349,7 +349,7 @@ Atendimento individualizado
 
 Cuidado integrado
 
-"Fisioterapia, massoterapia e estética em uma abordagem completa."
+"Fisioterapia, Hidroterapiae estética em uma abordagem completa."
 
 Foco em resultados
 
@@ -381,7 +381,7 @@ Título:
 
 Texto:
 
-"No Espaço Sueli Pereira, cuidamos da sua saúde e bem-estar de forma integrada. Combinamos fisioterapia especializada com técnicas de estética integrativa para tratar o corpo como um todo — aliviando dores, melhorando a mobilidade e cuidando também da beleza e autoestima.
+"No Clínica Shoyufisio, cuidamos da sua saúde e bem-estar de forma integrada. Combinamos fisioterapia especializada com técnicas de Home Care e Pilates para tratar o corpo como um todo — aliviando dores, melhorando a mobilidade e cuidando também da beleza e autoestima.
 
 Nosso atendimento é humanizado, individualizado e focado em resultados reais."
 
@@ -405,13 +405,13 @@ Título:
 
 Subtítulo:
 
-"Conheça algumas das especialidades do Espaço Sueli Pereira."
+"Conheça algumas das especialidades do Clínica Shoyufisio."
 
 Criar cards premium para cada serviço.
 
 Serviço 1
 
-Tratamento para dor e tensão muscular
+Fisioterapia
 
 Descrição:
 
@@ -463,7 +463,7 @@ Descrição:
 
 Serviço 7
 
-Estética Integrativa
+Home Care e Pilates
 
 Descrição:
 
@@ -523,7 +523,7 @@ Essa seção deve criar identificação e reduzir a distância entre problema e 
 
 12. SEÇÃO DE DIFERENCIAIS
 
-Criar uma seção visual destacando por que escolher o Espaço Sueli Pereira.
+Criar uma seção visual destacando por que escolher o Clínica Shoyufisio.
 
 Título:
 
@@ -633,8 +633,8 @@ Esquerda:
 
 Endereço:
 
-Rua Meyer, 120
-Jardim Higienópolis
+Rua Senador Souza Naves, 2129
+Jardim Londrilar
 Londrina - PR
 86050-160
 Brasil
@@ -662,12 +662,12 @@ Título:
 
 Exibir:
 
-Segunda-feira — 09:00 às 19:00
-Terça-feira — 09:00 às 19:00
-Quarta-feira — 09:00 às 19:00
-Quinta-feira — 09:00 às 19:00
-Sexta-feira — 09:00 às 19:00
-Sábado — 09:00 às 17:00
+Segunda-feira — 08:00 às 18:00
+Terça-feira — 08:00 às 18:00
+Quarta-feira — 08:00 às 18:00
+Quinta-feira — 08:00 às 18:00
+Sexta-feira — 08:00 às 18:00
+Sábado — 08:00 às 12:00
 Domingo — Fechado
 
 Destacar dinamicamente o dia atual.
@@ -758,9 +758,9 @@ Criar footer elegante e completo.
 
 Incluir:
 
-Espaço Sueli Pereira
+Clínica Shoyufisio
 
-"Fisioterapia Manual • Massoterapia • Estética Integrativa"
+"Fisioterapia Manual • Hidroterapia• Home Care e Pilates"
 
 Navegação
 
@@ -800,12 +800,12 @@ Localização
 
 Mostrar novamente:
 
-Rua Meyer, 120 — Jardim Higienópolis
+Rua Senador Souza Naves, 2129 — Jardim Londrilar
 Londrina — PR
 
 Finalizar com:
 
-© 2026 Espaço Sueli Pereira. Todos os direitos reservados.
+© 2026 Clínica Shoyufisio. Todos os direitos reservados.
 
 Adicionar links para:
 
@@ -827,7 +827,7 @@ Exemplos:
 
 Hero:
 
-"Olá! Gostaria de agendar uma avaliação no Espaço Sueli Pereira."
+"Olá! Gostaria de agendar uma avaliação no Clínica Shoyufisio."
 
 Serviço:
 
@@ -1016,11 +1016,11 @@ Criar estrutura semântica adequada.
 
 Title:
 
-Espaço Sueli Pereira | Fisioterapia, Massoterapia e Estética Integrativa em Londrina
+Clínica Shoyufisio | Fisioterapia, Hidroterapiae Home Care e Pilates em Londrina
 
 Meta description:
 
-Fisioterapia manual, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado no Espaço Sueli Pereira.
+Fisioterapia manual, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado no Clínica Shoyufisio.
 
 Utilizar:
 
@@ -1217,7 +1217,7 @@ Exemplo de lógica:
 
 ↓
 
-"No Espaço Sueli Pereira, diferentes técnicas são utilizadas de forma integrada para atender às necessidades de cada pessoa."
+"No Clínica Shoyufisio, diferentes técnicas são utilizadas de forma integrada para atender às necessidades de cada pessoa."
 
 ↓
 
@@ -1323,7 +1323,7 @@ conteúdo real > conteúdo inventado
 
 A página deve ter excelente equilíbrio entre estética e conversão.
 
-Use a referência visual enviada como inspiração de estrutura, mas desenvolva uma identidade própria para o Espaço Sueli Pereira utilizando a paleta definida.
+Use a referência visual enviada como inspiração de estrutura, mas desenvolva uma identidade própria para o Clínica Shoyufisio utilizando a paleta definida.
 
 Entregue uma interface visualmente refinada, responsiva, acessível, rápida e pronta para receber os dados reais de WhatsApp, Google Meu Negócio, Instagram e imagens do estabelecimento posteriormente.
 

@@ -1,6 +1,6 @@
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
-import heroImage from "@/assets/hero-espaco.jpg";
+import heroImage from "@/assets/fachada2.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
 
@@ -24,7 +24,7 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta sm:text-xs"
           >
-            Fisioterapia Manual • Massoterapia • Estética Integrativa
+            Fisioterapia • Hidroterapia• Home Care e Pilates
           </motion.p>
 
           <motion.h1
@@ -68,7 +68,7 @@ export function Hero() {
           <div className="overflow-hidden rounded-[2rem] shadow-lift">
             <img
               src={heroImage}
-              alt="Sala de atendimento do Espaço Sueli Pereira, com maca preparada, toalhas e iluminação suave"
+              alt="Sala de atendimento do Clínica Shoyufisio, com maca preparada, toalhas e iluminação suave"
               width={1200}
               height={1408}
               fetchPriority="high"

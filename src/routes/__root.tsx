@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "Espaço Sueli Pereira" },
+      { name: "author", content: "Clínica Shoyufisio" },
       { property: "og:type", content: "website" },
-      { property: "og:site_name", content: "Espaço Sueli Pereira" },
+      { property: "og:site_name", content: "Clínica Shoyufisio" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [

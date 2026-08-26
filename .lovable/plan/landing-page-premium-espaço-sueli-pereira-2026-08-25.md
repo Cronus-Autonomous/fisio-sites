@@ -1,4 +1,4 @@
-# Landing Page Premium — Espaço Sueli Pereira
+# Landing Page Premium — Clínica Shoyufisio
 
 Landing page única (rota `/`), em português, mobile-first, com foco total em um objetivo: agendamento pelo WhatsApp.
 

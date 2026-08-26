@@ -15,14 +15,14 @@ export function Footer() {
     <footer className="bg-cocoa text-sand">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
-          <p className="font-display text-xl">Espaço Sueli Pereira</p>
+          <p className="font-display text-xl">Clínica Shoyufisio</p>
           <p className="mt-2 text-sm text-sand/70">{business.tagline}</p>
           <div className="mt-5 flex items-center gap-3">
             <a
               href={business.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram do Espaço Sueli Pereira"
+              aria-label="Instagram do Clínica Shoyufisio"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sand/25 transition-colors hover:bg-sand/10"
             >
               <Instagram className="h-4 w-4" aria-hidden="true" />
@@ -65,8 +65,8 @@ export function Footer() {
                 WhatsApp {business.whatsapp.display}
               </a>
             </li>
-            <li>Segunda a sexta — 09:00 às 19:00</li>
-            <li>Sábado — 09:00 às 17:00</li>
+            <li>Segunda a sexta — 08:00 às 18:00</li>
+            <li>Sábado — 08:00 às 12:00</li>
             <li>Domingo — Fechado</li>
           </ul>
         </div>
@@ -76,7 +76,7 @@ export function Footer() {
           <p className="mt-4 flex items-start gap-2 text-sm text-sand/80">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
             <span>
-              Rua Meyer, 120 — Jardim Higienópolis
+              Rua Senador Souza Naves, 2129 — Jardim Londrilar
               <br />
               Londrina — PR
             </span>
@@ -86,7 +86,7 @@ export function Footer() {
 
       <div className="border-t border-sand/15">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-sand/60 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>© 2026 Espaço Sueli Pereira. Todos os direitos reservados.</p>
+          <p>© 2026 Shoyufisio Fisioterapia Ltda | CNPJ: 47.421.907-0001/98. Todos os direitos reservados.</p>
           <div className="flex gap-5">
             <a href="#contato" className="transition-colors hover:text-sand">
               Política de Privacidade

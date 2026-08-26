@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { business, whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
+import logo from "@/assets/shoyufisio.png";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -33,17 +34,13 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
-        <a
-          href="#inicio"
-          className="flex min-w-0 flex-col leading-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        >
-          <span className="font-display text-lg tracking-tight text-cocoa sm:text-xl">
-            Espaço <span className="text-terracotta">Sueli Pereira</span>
-          </span>
-          <span className="hidden text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground sm:block">
-            Fisioterapia • Massoterapia • Estética
-          </span>
-        </a>
+        
+            <img
+              src={logo}
+              alt="Logo da clínica de fisioterapia"
+              loading="lazy"
+              className="h-18 w-18 object-cover transition-transform duration-700"
+            />
 
         <nav aria-label="Navegação principal" className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (
