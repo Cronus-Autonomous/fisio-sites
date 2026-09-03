@@ -268,6 +268,26 @@ export const informacoes: Informacao[] = [
   },
 ];
 
+export type Partnerships = {
+  id: string;
+  titulo: string;
+  descricao: string;
+};
+
+export const partnerships: Partnerships[] = [
+  {
+    id: "atendimento-domiciliar",
+    titulo: "Atendimento Domiciliar",
+    descricao:
+      "Pensado para idosos, pessoas com dificuldade de locomoção ou mobilidade reduzida, e para quem prefere não sair de casa para os atendimentos. A fisioterapia é realizada na casa do paciente, com a estrutura e os equipamentos necessários levados até o local.",
+  },
+  {
+    id: "disfuncoes-vestibulares",
+    titulo: "Disfunções Vestibulares",
+    descricao:
+      "Quem sofre com tontura, vertigem, zumbido ou desequilíbrio, incluindo casos ligados a disfunções da ATM, como o bruxismo, encontra aqui um tratamento com técnicas específicas de reabilitação, que atuam nas diferentes causas do problema, aliviam dores e devolvem mais segurança e equilíbrio no dia a dia.",
+  },
+];
 
 export type GoogleReview = {
   author: string;

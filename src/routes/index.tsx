@@ -14,6 +14,7 @@ import { FinalCTA } from "@/components/landing/FinalCTA";
 import { Footer } from "@/components/landing/Footer";
 import { FloatingWhatsApp } from "@/components/landing/FloatingWhatsApp";
 import { MobileCTA } from "@/components/landing/MobileCTA";
+import { PartnershipsSection } from "@/components/landing/partnershipsSection";
 
 const title =
   "Clínica Shoyufisio";
@@ -83,6 +84,7 @@ function Index() {
         <AboutSection />
         <ServicesSection />
         <PainPointsSection />
+        <PartnershipsSection />
         <BenefitsSection />
         <ProcessSection />
         <TestimonialsSection />

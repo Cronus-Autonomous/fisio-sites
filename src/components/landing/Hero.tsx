@@ -3,6 +3,7 @@ import { useRef } from "react";
 import heroImage from "@/assets/fachada2.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
+import Accordion from "@/components/ui/accordion"
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
