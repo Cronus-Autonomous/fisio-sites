@@ -8,8 +8,11 @@ import {
   Sparkles,
   ArrowRight,
 } from "lucide-react";
-import { services, whatsappLink, whatsappMessages, type Service } from "@/config/business";
+import { informacoes, whatsappLink, whatsappMessages, type Service } from "@/config/business";
 import { Reveal } from "./Reveal";
+import {InformationAccordionItem}
+ from "@/components/landing/InformationAccordionItem";
+ import { Accordion } from "@/components/ui/accordion";
 
 const icons: Record<Service["icon"], typeof Activity> = {
   activity: Activity,
@@ -37,8 +40,8 @@ export function ServicesSection() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, i) => {
+        <div className="mt-12 grid gap-5">
+          {/* {services.map((service, i) => {
             const Icon = icons[service.icon];
             return (
               <Reveal key={service.id} delay={(i % 3) * 0.08}>
@@ -67,7 +70,31 @@ export function ServicesSection() {
                 </article>
               </Reveal>
             );
-          })}
+          })} */}
+          <Accordion
+          type="single"
+          collapsible
+          className="
+            mt-12
+            grid
+            grid-cols-1
+            gap-4
+            sm:grid-cols-2
+            lg:grid-cols-3
+            xl:grid-cols-4
+          "
+        >
+          {informacoes.map((informacao, index) => (
+            <Reveal
+              key={informacao.id}
+              delay={(index % 4) * 0.06}
+            >
+              <InformationAccordionItem
+                informacao={informacao}
+              />
+            </Reveal>
+          ))}
+        </Accordion>
         </div>
       </div>
     </section>

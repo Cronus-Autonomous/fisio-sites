@@ -121,6 +121,154 @@ export const services: Service[] = [
   // },
 ];
 
+export type Informacao = {
+  id: string;
+  titulo: string;
+  descricao: string;
+};
+
+export const informacoes: Informacao[] = [
+  {
+    id: "atendimento-domiciliar",
+    titulo: "Atendimento Domiciliar",
+    descricao:
+      "Pensado para idosos, pessoas com dificuldade de locomoção ou mobilidade reduzida, e para quem prefere não sair de casa para os atendimentos. A fisioterapia é realizada na casa do paciente, com a estrutura e os equipamentos necessários levados até o local.",
+  },
+  {
+    id: "disfuncoes-vestibulares",
+    titulo: "Disfunções Vestibulares",
+    descricao:
+      "Quem sofre com tontura, vertigem, zumbido ou desequilíbrio, incluindo casos ligados a disfunções da ATM, como o bruxismo, encontra aqui um tratamento com técnicas específicas de reabilitação, que atuam nas diferentes causas do problema, aliviam dores e devolvem mais segurança e equilíbrio no dia a dia.",
+  },
+  {
+    id: "drenagem-linfatica",
+    titulo: "Drenagem Linfática",
+    descricao:
+      "Recomendada para pós-operatório, gestantes e para quem sofre com retenção de líquido, inchaço e sensação de pernas pesadas. É uma massagem manual suave que estimula o sistema linfático, ajudando o corpo a eliminar o excesso de líquidos.",
+  },
+  {
+    id: "fisioterapia-geriatrica",
+    titulo: "Fisioterapia Geriátrica",
+    descricao:
+      "Voltada para idosos que sentem perda de força, insegurança ao caminhar ou dificuldade nas atividades diárias. Trabalha força, equilíbrio e mobilidade, prevenindo quedas e ajudando a manter a autonomia.",
+  },
+  {
+    id: "fisioterapia-neurologica",
+    titulo: "Fisioterapia Neurológica",
+    descricao:
+      "Direcionada a pessoas com sequelas de AVC, Parkinson, esclerose múltipla e outras condições neurológicas. Trabalha a recuperação de movimentos, força, coordenação e equilíbrio, buscando mais independência no dia a dia.",
+  },
+  {
+    id: "fisioterapia-ortopedica",
+    titulo: "Fisioterapia Ortopédica",
+    descricao:
+      "Trata lesões e dores relacionadas a ossos, músculos, articulações e tendões, como fraturas, entorses e tendinites. É indicada para quem está em recuperação pós-cirúrgica, pós-trauma ou sofre com dores na coluna.",
+  },
+  {
+    id: "fisioterapia-pediatrica",
+    titulo: "Fisioterapia Pediátrica",
+    descricao:
+      "Voltada para bebês e crianças com atraso no desenvolvimento motor, alterações posturais ou distúrbios neurológicos. Utiliza estímulos lúdicos, adequados a cada fase do desenvolvimento infantil.",
+  },
+  {
+    id: "fisioterapia-pelvica",
+    titulo: "Fisioterapia Pélvica",
+    descricao:
+      "Trabalha o fortalecimento e a reeducação da musculatura do assoalho pélvico. Atende mulheres em casos como incontinência urinária, dores pélvicas, preparo para o parto e recuperação no pós-parto, e também homens, em casos como incontinência urinária, incontinência fecal ou pós-cirurgia de próstata.",
+  },
+  {
+    id: "fisioterapia-respiratoria-adulto",
+    titulo: "Fisioterapia Respiratória Adulto",
+    descricao:
+      "Utiliza técnicas manuais e exercícios para desobstruir as vias aéreas e fortalecer a musculatura da respiração. É indicada para quem tem asma, bronquite, pneumonia ou outras dificuldades respiratórias, além do preparo e da recuperação de cirurgias.",
+  },
+  {
+    id: "fisioterapia-respiratoria-infantil",
+    titulo: "Fisioterapia Respiratória Infantil",
+    descricao:
+      "Usa técnicas suaves para desobstruir as vias aéreas e facilitar a respiração de bebês e crianças. Recomendada em casos de bronquiolite, pneumonia, asma e resfriados frequentes.",
+  },
+  {
+    id: "hidroterapia",
+    titulo: "Hidroterapia",
+    descricao:
+      "Realizada dentro da piscina aquecida, onde a flutuação da água reduz o impacto nas articulações e facilita os movimentos. Indicada para quem tem dor articular, sequelas neurológicas ou dificuldade de realizar exercícios fora da água, como idosos e gestantes.",
+  },
+  {
+    id: "liberacao-miofascial",
+    titulo: "Liberação Miofascial",
+    descricao:
+      'Técnica manual que atua sobre a fáscia, liberando pontos de tensão e aderências. Indicada para quem sente dores musculares crônicas, sensação de "corpo travado" ou pouca flexibilidade.',
+  },
+  {
+    id: "lpf",
+    titulo: "LPF (Low Pressure Fitness)",
+    descricao:
+      "Uma técnica de exercícios respiratórios e posturais que fortalece o assoalho pélvico e a musculatura abdominal profunda sem aumentar a pressão interna do abdômen. Indicada para quem busca melhorar a postura, fortalecer o abdômen e ganhar consciência corporal de forma segura e de baixo impacto.",
+  },
+  {
+    id: "manobra-de-epley",
+    titulo: "Manobra de Epley",
+    descricao:
+      "Técnica específica para tratar a Vertigem Posicional Paroxística Benigna (VPPB), uma das causas mais comuns de tontura repentina ao movimentar a cabeça. Consiste em uma sequência de movimentos da cabeça que reposiciona pequenos cristais do ouvido interno, aliviando a tontura.",
+  },
+  {
+    id: "massagem-modeladora",
+    titulo: "Massagem Modeladora",
+    descricao:
+      "Massagem de estímulo mais vigoroso que ativa a circulação sanguínea e linfática. Indicada para quem busca resultados estéticos aliados aos benefícios da massagem, como reduzir medidas e o aspecto da celulite.",
+  },
+  {
+    id: "massagem-relaxante",
+    titulo: "Massagem Relaxante",
+    descricao:
+      "Massagem de toques suaves e uniformes que reduz o estresse, alivia tensões musculares e promove relaxamento profundo. Ideal para qualquer pessoa que queira cuidar do bem-estar físico e emocional.",
+  },
+  {
+    id: "osteopatia",
+    titulo: "Osteopatia",
+    descricao:
+      "Técnica manual que avalia e trata o corpo de forma integrada, buscando identificar a causa da dor e não apenas o sintoma. Recomendada para dores de coluna, cabeça e desconfortos posturais recorrentes.",
+  },
+  {
+    id: "pilates",
+    titulo: "Pilates",
+    descricao:
+      "Método de exercícios que trabalha o fortalecimento do centro do corpo (core), a flexibilidade, o equilíbrio e a postura, com movimentos controlados e de baixo impacto. Indicado para pessoas de todas as idades que buscam mais consciência corporal, prevenção de dores e melhora da qualidade de vida.",
+  },
+  {
+    id: "quiropraxia",
+    titulo: "Quiropraxia",
+    descricao:
+      "Técnica manual focada em ajustes específicos na coluna vertebral e nas articulações, corrigindo desalinhamentos que causam dor. Indicada para quem sofre com dores nas costas, no pescoço e na cabeça de origem postural.",
+  },
+  {
+    id: "reflexologia-podal",
+    titulo: "Reflexologia Podal",
+    descricao:
+      "Massagem terapêutica que estimula pontos específicos nos pés, ligados a diferentes órgãos e sistemas do corpo. Ideal para quem busca relaxamento, alívio de tensões e sensação de bem-estar geral.",
+  },
+  {
+    id: "rpg",
+    titulo: "RPG (Reeducação Postural Global)",
+    descricao:
+      "Método individualizado que trabalha as cadeias musculares do corpo inteiro, buscando reequilibrar a postura como um todo, e não apenas tratar a região onde dói. Indicado para quem sofre com dores crônicas na coluna, desvios posturais e pouca flexibilidade.",
+  },
+  {
+    id: "taping-de-suporte",
+    titulo: "Taping de Suporte",
+    descricao:
+      "Consiste na aplicação de bandagem elástica (kinesio tape) na região abdominal, ajudando a sustentar o peso do abdômen. Indicado para gestantes que sentem o peso da barriga e dores nas costas e na lombar ao longo da gravidez.",
+  },
+  {
+    id: "taping-pos-parto",
+    titulo: "Taping Pós-parto",
+    descricao:
+      "Consiste na aplicação de bandagem elástica na região abdominal, auxiliando na recuperação da diástase e no conforto e na postura da nova mamãe. Indicado para mulheres no pós-parto que sentem desconforto ou querem apoio na recuperação abdominal.",
+  },
+];
+
+
 export type GoogleReview = {
   author: string;
   rating: number;
