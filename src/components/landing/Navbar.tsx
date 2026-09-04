@@ -27,13 +27,13 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-500",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-5000",
         scrolled
-          ? "bg-background/90 shadow-soft backdrop-blur-md"
+          ? "bg-background/40 backdrop-blur-sm"
           : "bg-background/40 backdrop-blur-sm",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 lg:px-8">
         
             <img
               src={logo}
