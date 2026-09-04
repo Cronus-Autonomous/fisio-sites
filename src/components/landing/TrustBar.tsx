@@ -2,25 +2,50 @@ import { HandHeart, Layers, Sparkles, UserRoundCheck } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const items = [
-  {
+   {
     icon: UserRoundCheck,
-    title: "Atendimento individualizado",
-    text: "Cada tratamento é pensado para a sua necessidade.",
+    title: "Salas com Banheiro Privativo",
+    text: "Duas das nossas salas de atendimento têm banheiro próprio, garantindo mais privacidade e comodidade, especialmente importante em tratamentos como a fisioterapia pélvica.",
   },
   {
     icon: Layers,
-    title: "Cuidado integrado",
-    text: "Fisioterapia, Hidroterapiae estética em uma abordagem completa.",
+    title: "Estrutura Acessível para PCD e Idosos",
+    text: "Contamos com cadeira de rodas disponível para uso na clínica e banheiro adaptado, para que pessoas com mobilidade reduzida e idosos se sintam confortáveis e bem atendidos.",
   },
   {
     icon: Sparkles,
-    title: "Foco em resultados",
-    text: "Tratamentos direcionados para melhorar sua qualidade de vida.",
+    title: "Macas Elétricas",
+    text: " Nossas macas são elétricas e ajustam a altura automaticamente, facilitando a subida de quem tem mais dificuldade de se movimentar.",
   },
   {
     icon: HandHeart,
-    title: "Atendimento humanizado",
-    text: "Um espaço acolhedor, seguro e pensado para você.",
+    title: "Equipamentos de Ponta e Sempre Calibrados",
+    text: "Trabalhamos com aparelhos de laser, ultrassom e outros equipamentos das melhores marcas do mercado, sempre calibrados, garantindo tratamentos seguros e eficazes.",
+  },
+  {
+    icon: HandHeart,
+    title: "Aparelhos de Pilates de Qualidade",
+    text: "Nossos aparelhos de Pilates são de marca renomada e passam por revisões periódicas, garantindo segurança e bom funcionamento em todas as aulas.",
+  },
+  {
+    icon: Layers,
+    title: "Salas Climatizadas",
+    text: "Todas as salas de atendimento contam com ar-condicionado quente e frio, garantindo mais conforto durante as sessões.",
+  },
+  {
+    icon: Sparkles,
+    title: "Ambiente Limpo e Seguro",
+    text: "Cuidamos da higiene e da limpeza em toda a clínica, da recepção às salas de atendimento, para que você se sinta seguro e bem cuidado em cada visita.",
+  },
+  {
+    icon: HandHeart,
+    title: "Equipe em Constante Atualização",
+    text: "Investimos na capacitação dos nossos fisioterapeutas, com cursos e especializações, para garantir o que há de mais atual em técnicas e tratamentos.",
+  },
+  {
+    icon: UserRoundCheck,
+    title: "Atendimento individualizado",
+    text: "Cada paciente recebe atenção exclusiva do fisioterapeuta durante a sessão, com o cuidado e o tempo que o seu tratamento precisa.",
   },
 ];
 
