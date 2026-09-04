@@ -276,16 +276,16 @@ export type Partnerships = {
 
 export const partnerships: Partnerships[] = [
   {
-    id: "atendimento-domiciliar",
-    titulo: "Atendimento Domiciliar",
+    id: "recovery-em-eventos-esportivos",
+    titulo: "Recovery em Eventos Esportivos",
     descricao:
-      "Pensado para idosos, pessoas com dificuldade de locomoção ou mobilidade reduzida, e para quem prefere não sair de casa para os atendimentos. A fisioterapia é realizada na casa do paciente, com a estrutura e os equipamentos necessários levados até o local.",
+      "Oferecemos recovery para corridas, torneios de vôlei, beach tênis e outros eventos esportivos, levando nossa equipe de fisioterapeutas e toda a estrutura necessária até o local da prova. Os participantes recebem atendimento logo após a atividade física, aliviando a fadiga muscular e acelerando a recuperação. É a opção ideal para organizadores de eventos que querem oferecer um cuidado extra e um diferencial para os atletas e participantes.",
   },
   {
-    id: "disfuncoes-vestibulares",
-    titulo: "Disfunções Vestibulares",
+    id: "pilates-e-fisioterapia-para-empresas-e-escolas",
+    titulo: "Pilates e Fisioterapia para Empresas e Escolas",
     descricao:
-      "Quem sofre com tontura, vertigem, zumbido ou desequilíbrio, incluindo casos ligados a disfunções da ATM, como o bruxismo, encontra aqui um tratamento com técnicas específicas de reabilitação, que atuam nas diferentes causas do problema, aliviam dores e devolvem mais segurança e equilíbrio no dia a dia.",
+      "Empresas que cuidam bem de quem trabalha nelas constroem times mais saudáveis e motivados e é para ajudar nisso que existe essa parceria da Shoyufisio. Fechamos turmas de Pilates na nossa clínica como benefício para os colaboradores, e também podemos levar a fisioterapia laboral até o ambiente de trabalho, com orientações e exercícios de prevenção de dores e lesões. Uma forma simples de mostrar, na prática, que a empresa se importa com o bem-estar de quem faz parte dela.",
   },
 ];
 
