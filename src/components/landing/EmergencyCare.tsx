@@ -1,15 +1,15 @@
 import { Clock, HeartPulse, CalendarDays } from "lucide-react";
 
-const icons = [Clock, HeartPulse, CalendarDays];
+const icons = [ HeartPulse ];
 
 export function EmergencyCare() {
   return (
-    <div className="rounded-2xl border border-clay/40 bg-cream p-6">
+    <div className="rounded-2xl border border-clay/40 bg-emergency mt-2 p-6">
       <div className="flex items-center gap-2">
         {icons.map((Icon, i) => (
           <Icon
             key={i}
-            className="h-4 w-4 text-rose"
+            className="h-4 w-4 text-care"
             strokeWidth={1.5}
             aria-hidden="true"
           />

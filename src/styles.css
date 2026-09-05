@@ -55,6 +55,8 @@
   --color-cocoa: var(--cocoa);
   --color-rose: var(--rose);
   --color-cream: var(--cream);
+  --color-emergency: var(--emergency);
+  --color-care: var(--care);
   --shadow-soft: 0 1px 2px oklch(0.3607 0.0604 24.93 / 0.04), 0 12px 32px -18px oklch(0.3607 0.0604 24.93 / 0.22);
   --shadow-lift: 0 2px 4px oklch(0.3607 0.0604 24.93 / 0.05), 0 22px 48px -24px oklch(0.3607 0.0604 24.93 / 0.28);
 }
@@ -69,7 +71,9 @@
   --terracotta: #268C5C; /* #268C5C */
   --cocoa: #2E593D; /* #2E593D */
   --rose: #82F27E; /* #82F27E */
-  --cream: #F6FCF5;
+  --cream: #fcf5f5;
+  --emergency: #f7e6e8;
+  --care: #f27e82;
 
   --background: oklch(1 0 0);
   --foreground: var(--cocoa);
