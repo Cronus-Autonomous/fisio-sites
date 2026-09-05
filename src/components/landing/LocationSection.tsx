@@ -3,6 +3,7 @@ import { business } from "@/config/business";
 import { BusinessHours } from "./BusinessHours";
 import { PaymentMethods } from "./PaymentMethods";
 import { Reveal } from "./Reveal";
+import { EmergencyCare } from "@/components/landing/EmergencyCare";
 
 export function LocationSection() {
   const { address } = business;
@@ -80,6 +81,7 @@ export function LocationSection() {
           </Reveal>
           <Reveal delay={0.08}>
             <PaymentMethods />
+            <EmergencyCare />
           </Reveal>
         </div>
       </div>
