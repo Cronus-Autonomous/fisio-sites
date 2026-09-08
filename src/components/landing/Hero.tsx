@@ -3,7 +3,7 @@ import { useRef } from "react";
 import heroImage from "@/assets/fachada2.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
-import Accordion from "@/components/ui/accordion"
+import { Accordion } from "@/components/ui/accordion"
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -76,10 +76,6 @@ export function Hero() {
               className="h-[22rem] w-full object-cover sm:h-[30rem] lg:h-[34rem]"
             />
           </div>
-          <div
-            aria-hidden="true"
-            className="absolute -bottom-6 -left-6 hidden h-24 w-24 rounded-full border border-clay/70 lg:block"
-          />
         </motion.div>
       </div>
     </section>
