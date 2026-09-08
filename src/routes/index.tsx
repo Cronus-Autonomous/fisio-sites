@@ -3,10 +3,9 @@ import { business } from "@/config/business";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { TrustBar } from "@/components/landing/TrustBar";
-import { AboutSection } from "@/components/landing/AboutSection";
+import { BenefitsSection } from "@/components/landing/BenefitsSection";
 import { ServicesSection } from "@/components/landing/ServicesSection";
 import { PainPointsSection } from "@/components/landing/PainPointsSection";
-import { BenefitsSection } from "@/components/landing/BenefitsSection";
 import { ProcessSection } from "@/components/landing/ProcessSection";
 import { TestimonialsSection } from "@/components/landing/TestimonialsSection";
 import { LocationSection } from "@/components/landing/LocationSection";
@@ -81,7 +80,6 @@ function Index() {
       <main>
         <Hero />
         <TrustBar />
-        <AboutSection />
         <ServicesSection />
         <PainPointsSection />
         <PartnershipsSection />
