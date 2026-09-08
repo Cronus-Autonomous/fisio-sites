@@ -98,27 +98,6 @@ export const services: Service[] = [
       "Hidroterapia, também conhecida como fisioterapia aquática, é um tipo de tratamento terapêutico realizado em uma piscina aquecida, onde exercícios são adaptados para auxiliar na reabilitação de diversas condições físicas e lesões. A água quente proporciona um ambiente seguro e eficaz para a realização de movimentos, aliviando dores, melhorando a mobilidade e fortalecendo a musculatura, além de promover relaxamento e bem-estar.",
     icon: "droplets",
   }
-  // {
-  //   id: "lipedema",
-  //   title: "Tratamento para Lipedema",
-  //   description:
-  //     "Abordagem individualizada para auxiliar no cuidado corporal e na qualidade de vida.",
-  //   icon: "heart-pulse",
-  // },
-  // {
-  //   id: "pos-operatorio",
-  //   title: "Pós-operatório de Cirurgia Plástica",
-  //   description:
-  //     "Cuidados especializados para auxiliar na recuperação e no acompanhamento do período pós-operatório.",
-  //   icon: "bandage",
-  // },
-  // {
-  //   id: "estetica-integrativa",
-  //   title: "Home Care e Pilates",
-  //   description:
-  //     "Tratamentos que unem cuidado corporal, bem-estar, autoestima e uma visão integrada do corpo.",
-  //   icon: "sparkles",
-  // },
 ];
 
 export type Informacao = {
@@ -289,6 +268,100 @@ export const partnerships: Partnerships[] = [
   },
 ];
 
+export interface TeamMember {
+  id: string;
+  titulo: string;
+  descricao: string;
+  imagem: string;
+}
+
+export const profissionais: TeamMember[] = [
+  {
+    id: "edson",
+    titulo: "Edson (Shoyu)",
+    descricao: "Atendimento Domiciliar; Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Ortopédica e Hidroterapia.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "beatriz",
+    titulo: "Beatriz",
+    descricao: "Aplicação de Taping; Drenagem Linfática; Fisioterapia Pélvica e Obstetrícia; Liberação Miofascial; LPF; Massagem Relaxante; Pilates.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "bianca",
+    titulo: "Bianca",
+    descricao: "Liberação Miofascial; Pilates; Quiropraxia; Reabilitação Funcional; Fisioterapia Ortopédica e Fisioterapia Geriátrica.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "gian",
+    titulo: "Gian",
+    descricao: "Fisioterapia Respiratória; Disfunções Vestibulares; Liberação Miofascial; Fisioterapia Neurológica; Fisioterapia Ortopédica.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "giovanna",
+    titulo: "Giovanna",
+    descricao: "Fisioterapia Respiratória (Adulto e Infantil); Laserterapia.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "italo",
+    titulo: "Italo",
+    descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Osteopatia.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "jessica",
+    titulo: "Jessica",
+    descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Pilates (Adulto e Infantil).",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "joyce",
+    titulo: "Joyce",
+    descricao: "Drenagem Linfática; Liberação Miofascial, LPF; Massagem Modeladora e Relaxante; Pilates; Quiropraxia; Reflexologia Podal.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "junior",
+    titulo: "Junior",
+    descricao: "Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Respiratória.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "luciana",
+    titulo: "Luciana",
+    descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Pilates.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "maria-eduarda",
+    titulo: "Maria Eduarda",
+    descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Fisioterapia Ortopédica; Pilates; Fisioterapia Neurológica (Adultos e Idosos).",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "mayara",
+    titulo: "Mayara",
+    descricao: "Drenagem Linfática (Pós-operatório); Fisioterapia Obstétrica; Liberação Miofascial; Massagem Relaxante; Fisioterapia Ortopédica; Pilates.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "ohana",
+    titulo: "Ohana",
+    descricao: "Fisioterapia Ortopédica, Pré e Pós-operatório.",
+    imagem: "fisio1.jpg",
+  },
+  {
+    id: "renan",
+    titulo: "Renan",
+    descricao: "Disfunções da ATM; Fisioterapia Neurológica; Fisioterapia Ortopédica; Paralisia Facial; Disfunções Vestibulares.",
+    imagem: "fisio1.jpg",
+  },
+];
+
 export type GoogleReview = {
   author: string;
   rating: number;
@@ -297,9 +370,4 @@ export type GoogleReview = {
   avatarUrl?: string;
 };
 
-/**
- * Avaliações reais do Google Meu Negócio.
- * Mantido vazio de propósito: nenhuma avaliação deve ser inventada.
- * Basta popular este array (ou conectar a API do Google) para exibi-las.
- */
 export const googleReviews: GoogleReview[] = [];
