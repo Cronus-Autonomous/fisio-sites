@@ -3,6 +3,7 @@ import { Reveal } from "./Reveal";
 import retrato from "@/assets/founder.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
+import { ProfessionalCarousel } from "@/components/landing/Carrossel";
 
 const benefits = [
   {
@@ -48,50 +49,57 @@ export function BenefitsSection() {
 
         {/* CONTEÚDO */}
         <div>
-          <Reveal>
-            <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
-              Sobre a clínica
-            </p>
+  <Reveal>
+    <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
+      Sobre a clínica
+    </p>
 
-            <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
-              Seu corpo merece ser cuidado por inteiro.
-            </h2>
-          </Reveal>
+    <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
+      Seu corpo merece ser cuidado por inteiro.
+    </h2>
+  </Reveal>
 
-          <Reveal delay={0.1}>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
-              <p>
-                A Shoyufisio é uma clínica de fisioterapia com quase 40 anos de
-                experiência. Nosso objetivo é oferecer fisioterapia de
-                excelência e qualidade, com foco na recuperação, na prevenção e
-                na promoção da saúde e do bem-estar dos nossos pacientes.
-                Queremos te ajudar a construir um futuro sem dores e sem
-                limitações!
-              </p>
+  <Reveal delay={0.1}>
+    <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+      <p>
+        A Shoyufisio é uma clínica de fisioterapia com quase 40 anos de
+        experiência. Nosso objetivo é oferecer fisioterapia de
+        excelência e qualidade, com foco na recuperação, na prevenção e
+        na promoção da saúde e do bem-estar dos nossos pacientes.
+        Queremos te ajudar a construir um futuro sem dores e sem
+        limitações!
+      </p>
 
-              <p>
-                Nosso atendimento é humanizado, individualizado e focado em
-                resultados reais.
-              </p>
-            </div>
-          </Reveal>
+      <p>
+        Nosso atendimento é humanizado, individualizado e focado em
+        resultados reais.
+      </p>
+    </div>
+  </Reveal>
 
-          <Reveal delay={0.2}>
-            <p className="mt-8 border-l-2 border-clay pl-5 font-display text-xl italic text-cocoa">
-              Cuidado que começa entendendo você.
-            </p>
-          </Reveal>
+  <Reveal delay={0.2}>
+    <p className="mt-8 border-l-2 border-clay pl-5 font-display text-xl italic text-cocoa">
+      Cuidado que começa entendendo você.
+    </p>
+  </Reveal>
 
-          <Reveal delay={0.3}>
-            <CTAButton
-              href={whatsappLink(whatsappMessages.sobre)}
-              withWhatsApp
-              className="mt-8"
-            >
-              Quero conhecer o Espaço
-            </CTAButton>
-          </Reveal>
-        </div>
+  <Reveal delay={0.3}>
+    <CTAButton
+      href={whatsappLink(whatsappMessages.sobre)}
+      withWhatsApp
+      className="mt-8"
+    >
+      Quero conhecer o Espaço
+    </CTAButton>
+  </Reveal>
+
+  {/* CARROSSEL DOS PROFISSIONAIS */}
+  <Reveal delay={0.4}>
+    <div className="mt-16">
+      <Carrossel />
+    </div>
+  </Reveal>
+</div>
       </div>
     </section>
   );
