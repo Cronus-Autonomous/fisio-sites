@@ -79,8 +79,8 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
-        <TrustBar />
         <ServicesSection />
+        <TrustBar />
         <PainPointsSection />
         <PartnershipsSection />
         <BenefitsSection />
@@ -95,3 +95,4 @@ function Index() {
     </div>
   );
 }
+//TODO: Implementar o componente de FAQ, caso seja necessário.

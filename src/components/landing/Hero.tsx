@@ -34,10 +34,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="mt-5 text-[2.1rem] leading-[1.12] tracking-tight text-cocoa sm:text-5xl lg:text-[3.4rem]"
           >
-            Cuidado personalizado para aliviar{" "}
-            <span className="italic text-terracotta">dores</span>, recuperar seu{" "}
-            <span className="italic text-terracotta">movimento</span> e cuidar do seu{" "}
-            <span className="italic text-terracotta">bem-estar</span>.
+            Fisioterapia{" "}
+            <span className="italic text-terracotta">em Londrina</span>,{" "}
           </motion.h1>
 
           <motion.p
