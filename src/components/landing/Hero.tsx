@@ -57,9 +57,6 @@ export function Hero() {
             <CTAButton href={whatsappLink(whatsappMessages.hero)} size="lg" withWhatsApp>
               Agendar minha avaliação
             </CTAButton>
-            <CTAButton href="#servicos" variant="outline" size="lg" external={false}>
-              Conhecer os tratamentos
-            </CTAButton>
           </motion.div>
         </div>
 
