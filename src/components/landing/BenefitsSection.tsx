@@ -7,7 +7,7 @@ import Carrossel from "@/components/landing/Carrossel";
 
 export function BenefitsSection() {
   return (
-    <section className="bg-sand py-20 lg:py-28">
+    <section id="sobre" className="bg-sand py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         
         {/* LINHA SUPERIOR: IMAGEM (ESQUERDA) E TEXTO (DIREITA) */}

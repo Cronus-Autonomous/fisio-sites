@@ -31,7 +31,7 @@ export function PartnershipsSection() {
   ];
 
   return (
-    <section id="servicos" className="bg-cream py-20 lg:py-28">
+    <section className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         {/* CABEÇALHO */}
         <Reveal className="max-w-2xl">
