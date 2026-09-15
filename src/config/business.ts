@@ -266,6 +266,11 @@ export const partnerships: Partnerships[] = [
     descricao:
       "Empresas que cuidam bem de quem trabalha nelas constroem times mais saudáveis e motivados e é para ajudar nisso que existe essa parceria da Shoyufisio. Fechamos turmas de Pilates na nossa clínica como benefício para os colaboradores, e também podemos levar a fisioterapia laboral até o ambiente de trabalho, com orientações e exercícios de prevenção de dores e lesões. Uma forma simples de mostrar, na prática, que a empresa se importa com o bem-estar de quem faz parte dela.",
   },
+  {
+      id: "programa-reforce",
+      titulo: "Programa Reforce: mais força, equilíbrio e segurança depois dos 60",
+      descricao: "O Programa Reforce é pensado especialmente para quem tem 60 anos ou mais e sente insegurança para caminhar, medo de cair ou dificuldade para se movimentar no dia a dia. Com exercícios voltados para fortalecimento, equilíbrio e mobilidade, o objetivo é ajudar você a ganhar mais força, mais confiança e mais autonomia para fazer suas atividades sem medo.",  
+    }
 ];
 
 export interface TeamMember {

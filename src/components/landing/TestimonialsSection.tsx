@@ -25,7 +25,6 @@ export function TestimonialsSection() {
           {reviews.map((item) => (
             <div key={item.id} className="rounded-2xl bg-white p-6 shadow-sm border border-cocoa/10">
               <span className="text-xs uppercase font-semibold text-terracotta">{item.procedimento}</span>
-              <h3 className="mt-1 font-bold text-cocoa">{item.titulo}</h3>
               <p className="mt-2 text-sm text-muted-foreground">"{item.comentario}"</p>
               <div className="mt-4 pt-4 border-t border-cocoa/10 flex justify-between items-center text-xs text-cocoa/70">
                 <span className="font-semibold">{item.nome_cliente}</span>

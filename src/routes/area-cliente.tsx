@@ -13,7 +13,6 @@ import {
   User, 
   Calendar, 
   Activity, 
-  MessageSquare, 
   ArrowLeft 
 } from "lucide-react";
 import { supabase, type Review } from "@/lib/supabase";
@@ -29,7 +28,6 @@ const loginSchema = z.object({
 });
 
 const reviewSchema = z.object({
-  titulo: z.string().min(3, "Título muito curto"),
   comentario: z.string().min(10, "Comentário deve ter no mínimo 10 caracteres"),
   nome_cliente: z.string().min(3, "Nome é obrigatório"),
   data_nascimento: z.string().nonempty("Data de nascimento é obrigatória"),
@@ -263,7 +261,7 @@ function AreaCliente() {
           </h2>
 
           <form onSubmit={handleSubmitReview(onCreateReview)} className="mt-6 space-y-4">
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-1">
               <div>
                 <label className="block text-xs font-semibold uppercase text-cocoa">
                   Nome do Cliente
@@ -279,23 +277,6 @@ function AreaCliente() {
                 </div>
                 {reviewErrors.nome_cliente && (
                   <span className="text-xs text-red-500">{reviewErrors.nome_cliente.message}</span>
-                )}
-              </div>
-
-              <div>
-                <label className="block text-xs font-semibold uppercase text-cocoa">
-                  Data de Nascimento
-                </label>
-                <div className="relative mt-1">
-                  <Calendar className="absolute left-3 top-3 h-4 w-4 text-cocoa/40" />
-                  <input
-                    type="date"
-                    {...registerReview("data_nascimento")}
-                    className="w-full rounded-lg border border-cocoa/20 bg-cream/30 py-2 pl-10 pr-3 text-sm focus:border-terracotta focus:outline-none"
-                  />
-                </div>
-                {reviewErrors.data_nascimento && (
-                  <span className="text-xs text-red-500">{reviewErrors.data_nascimento.message}</span>
                 )}
               </div>
             </div>
@@ -318,22 +299,20 @@ function AreaCliente() {
                   <span className="text-xs text-red-500">{reviewErrors.procedimento.message}</span>
                 )}
               </div>
-
               <div>
                 <label className="block text-xs font-semibold uppercase text-cocoa">
-                  Título do Comentário
+                  Data de Nascimento
                 </label>
                 <div className="relative mt-1">
-                  <MessageSquare className="absolute left-3 top-3 h-4 w-4 text-cocoa/40" />
+                  <Calendar className="absolute left-3 top-3 h-4 w-4 text-cocoa/40" />
                   <input
-                    type="text"
-                    {...registerReview("titulo")}
-                    placeholder="Ex: Atendimento excelente!"
+                    type="date"
+                    {...registerReview("data_nascimento")}
                     className="w-full rounded-lg border border-cocoa/20 bg-cream/30 py-2 pl-10 pr-3 text-sm focus:border-terracotta focus:outline-none"
                   />
                 </div>
-                {reviewErrors.titulo && (
-                  <span className="text-xs text-red-500">{reviewErrors.titulo.message}</span>
+                {reviewErrors.data_nascimento && (
+                  <span className="text-xs text-red-500">{reviewErrors.data_nascimento.message}</span>
                 )}
               </div>
             </div>
@@ -376,7 +355,6 @@ function AreaCliente() {
                 >
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="font-bold text-cocoa">{rev.titulo}</span>
                       <span className="rounded bg-terracotta/10 px-2 py-0.5 text-xs text-terracotta font-medium">
                         {rev.procedimento}
                       </span>
