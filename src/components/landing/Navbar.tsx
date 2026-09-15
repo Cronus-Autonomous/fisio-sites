@@ -68,7 +68,7 @@ export function Navbar() {
             className="flex items-center gap-2 text-sm font-medium text-cocoa hover:text-terracotta transition-colors"
           >
             <User className="h-4 w-4" />
-            Área do Cliente
+            Área Logada
           </a>
           <button
             type="button"
