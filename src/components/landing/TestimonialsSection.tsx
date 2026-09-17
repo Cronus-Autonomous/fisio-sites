@@ -19,7 +19,7 @@ export function TestimonialsSection() {
   return (
     <section id="depoimentos" className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <h2 className="text-3xl font-bold text-cocoa text-center">O que dizem nossos clientes</h2>
+        <h2 className="text-3xl font-bold text-cocoa text-center">O que dizem nossos pacientes</h2>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {reviews.map((item) => (

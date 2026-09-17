@@ -80,10 +80,10 @@ function Index() {
       <main>
         <Hero />
         <ServicesSection />
+        <BenefitsSection />
         <TrustBar />
         <PainPointsSection />
         <PartnershipsSection />
-        <BenefitsSection />
         <ProcessSection />
         <TestimonialsSection />
         <LocationSection />
