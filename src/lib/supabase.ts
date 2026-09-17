@@ -18,7 +18,6 @@ export interface Review {
   id: string;
   created_at?: string;
   user_id: string;
-  titulo: string;
   comentario: string;
   nome_cliente: string;
   data_nascimento: string;

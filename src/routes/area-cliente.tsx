@@ -176,15 +176,12 @@ function AreaCliente() {
             Acesse para gerenciar seus depoimentos e avaliações.
           </p>
 
-          {/* TELA DE LOGIN COM LOGS E SUBMIT GARANTIDO */}
           <form
             onSubmit={handleSubmitLogin(
               (data) => {
-                console.log("Formulário validado com sucesso. Enviando para o Supabase...", data);
                 onLogin(data);
               },
               (errors) => {
-                console.error("Erro de validação do formulário Zod:", errors);
                 toast.error("Preencha e-mail e senha corretamente.");
               }
             )}
@@ -222,7 +219,6 @@ function AreaCliente() {
               )}
             </div>
 
-            {/* type="submit" explícito */}
             <button
               type="submit"
               disabled={isLoggingIn}
@@ -241,14 +237,14 @@ function AreaCliente() {
     <div className="min-h-screen bg-cream py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-4xl">
         {/* CABEÇALHO */}
-        <div className="flex items-center justify-between rounded-2xl bg-white p-6 shadow-sm border border-cocoa/10">
-          <div>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between rounded-2xl bg-white p-6 shadow-sm border border-cocoa/10">
+          <div className="min-w-0 flex-1">
             <h1 className="text-2xl font-bold text-cocoa">Painel de Avaliações</h1>
-            <p className="text-sm text-muted-foreground">{session.user.email}</p>
+            <p className="text-sm text-muted-foreground truncate break-all">{session.user.email}</p>
           </div>
           <button
             onClick={handleLogout}
-            className="flex items-center gap-2 rounded-lg bg-red-50 px-4 py-2 text-sm font-semibold text-red-600 transition hover:bg-red-100"
+            className="flex items-center justify-center gap-2 rounded-lg bg-red-50 px-4 py-2 text-sm font-semibold text-red-600 transition hover:bg-red-100 shrink-0"
           >
             <LogOut className="h-4 w-4" /> Sair
           </button>
@@ -351,23 +347,29 @@ function AreaCliente() {
               {reviews.map((rev) => (
                 <div
                   key={rev.id}
-                  className="flex flex-col justify-between rounded-xl border border-cocoa/10 bg-cream/20 p-4 sm:flex-row sm:items-center"
+                  className="flex flex-col gap-4 rounded-xl border border-cocoa/10 bg-cream/20 p-4 sm:flex-row sm:items-center sm:justify-between"
                 >
-                  <div className="space-y-1">
+                  {/* min-w-0 impede o elemento flex filho de expandir alem do pai */}
+                  <div className="min-w-0 flex-1 space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="rounded bg-terracotta/10 px-2 py-0.5 text-xs text-terracotta font-medium">
+                      <span className="inline-block max-w-full truncate rounded bg-terracotta/10 px-2 py-0.5 text-xs text-terracotta font-medium">
                         {rev.procedimento}
                       </span>
                     </div>
-                    <p className="text-sm text-cocoa/80">"{rev.comentario}"</p>
-                    <p className="text-xs text-muted-foreground">
+                    
+                    {/* Quebra de linha garantida para o texto */}
+                    <p className="text-sm text-cocoa/80 whitespace-pre-wrap break-words">
+                      "{rev.comentario}"
+                    </p>
+                    
+                    <p className="text-xs text-muted-foreground break-words">
                       Cliente: <strong>{rev.nome_cliente}</strong> | Nasc: {rev.data_nascimento}
                     </p>
                   </div>
 
                   <button
                     onClick={() => handleDeleteReview(rev.id)}
-                    className="mt-3 flex items-center gap-1 self-end rounded-lg p-2 text-xs font-semibold text-red-600 transition hover:bg-red-50 sm:mt-0 sm:self-center"
+                    className="flex shrink-0 items-center gap-1 self-end rounded-lg p-2 text-xs font-semibold text-red-600 transition hover:bg-red-50 sm:self-center"
                   >
                     <Trash2 className="h-4 w-4" /> Excluir
                   </button>
