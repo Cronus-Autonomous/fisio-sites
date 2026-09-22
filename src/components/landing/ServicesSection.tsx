@@ -30,13 +30,13 @@ export function ServicesSection() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <Reveal className="max-w-2xl">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
-            Tratamentos
+            Especialidades
           </p>
           <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
-            Tratamentos pensados para as necessidades do seu corpo
+            Especialidades pensadas para as necessidades do seu corpo
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            Conheça algumas das especialidades da Clínica Shoyufisio.
+            Conheça as áreas de atuação da Clínica Shoyufisio.
           </p>
         </Reveal>
 

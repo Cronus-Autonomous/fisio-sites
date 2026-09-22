@@ -6,7 +6,6 @@ export function PartnershipsSection() {
   const videos = [
     "/videos/recovery.mov",
     "/videos/empresas.mov",
-    "/videos/reforce.mov",
   ];
 
   const cards = [
@@ -22,12 +21,6 @@ export function PartnershipsSection() {
       descricao: partnerships[1]?.descricao ?? "",
       video: videos[1],
     },
-    {
-      id: partnerships[2]?.id ?? "parceria-3",
-      titulo: partnerships[2]?.titulo ?? "",
-      descricao: partnerships[2]?.descricao ?? "",
-      video: videos[2],
-    },
   ];
 
   return (
@@ -36,11 +29,11 @@ export function PartnershipsSection() {
         {/* CABEÇALHO */}
         <Reveal className="max-w-2xl">
           <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
-            Parcerias
+            OUTROS SERVIÇOS
           </p>
 
           <h2 className="mt-4 font-display text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
-            Nossas Parcerias
+            Conheça outros serviços que também fazem parte do nosso trabalho
           </h2>
 
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -48,8 +41,8 @@ export function PartnershipsSection() {
           </p>
         </Reveal>
 
-        {/* 3 CARDS LADO A LADO */}
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* 2 CARDS LADO A LADO */}
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {cards.map((card, i) => (
             <Reveal
               key={card.id}

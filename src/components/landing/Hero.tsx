@@ -19,14 +19,6 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24">
         <div>
-          <motion.p
-            initial={reduced ? false : { opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta sm:text-xs"
-          >
-            Fisioterapia • Hidroterapia• Home Care e Pilates
-          </motion.p>
 
           <motion.h1
             initial={reduced ? false : { opacity: 0, y: 18 }}
@@ -44,8 +36,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Tratamentos individualizados para cuidar do corpo de forma integrada, com atenção às
-            suas necessidades e aos resultados que você busca.
+            Tratamentos individualizados, com foco nos resultados que você busca.
           </motion.p>
 
           <motion.div

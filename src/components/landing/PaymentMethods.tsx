@@ -10,7 +10,7 @@ export function PaymentMethods() {
         {icons.map((Icon, i) => (
           <Icon key={i} className="h-4 w-4 text-rose" strokeWidth={1.5} aria-hidden="true" />
         ))}
-        <h3 className="font-display text-lg text-cocoa">Facilidade para o seu atendimento</h3>
+        <h3 className="font-display text-lg text-cocoa">Formas de Pagamento</h3>
       </div>
       <ul className="mt-4 flex flex-wrap gap-2">
         {business.paymentMethods.map((method) => (

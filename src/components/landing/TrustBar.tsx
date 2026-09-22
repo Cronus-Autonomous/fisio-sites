@@ -1,8 +1,13 @@
-import { HandHeart, Layers, Sparkles, UserRoundCheck } from "lucide-react";
+import {
+  HandHeart,
+  Layers,
+  Sparkles,
+  UserRoundCheck,
+} from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const items = [
-   {
+  {
     icon: UserRoundCheck,
     title: "Salas com Banheiro Privativo",
     text: "Duas das nossas salas de atendimento têm banheiro próprio, garantindo mais privacidade e comodidade, especialmente importante em tratamentos como a fisioterapia pélvica.",
@@ -15,7 +20,7 @@ const items = [
   {
     icon: Sparkles,
     title: "Macas Elétricas",
-    text: " Nossas macas são elétricas e ajustam a altura automaticamente, facilitando a subida de quem tem mais dificuldade de se movimentar.",
+    text: "Nossas macas são elétricas e ajustam a altura automaticamente, facilitando a subida de quem tem mais dificuldade de se movimentar.",
   },
   {
     icon: HandHeart,
@@ -51,17 +56,51 @@ const items = [
 
 export function TrustBar() {
   return (
-    <section aria-label="Diferenciais rápidos" className="bg-cream pb-16 lg:pb-24">
-      <div className="mx-auto grid max-w-7xl gap-4 px-5 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-        {items.map((item, i) => (
-          <Reveal key={item.title} delay={i * 0.08}>
-            <article className="h-full rounded-2xl border border-clay/40 bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-0.5">
-              <item.icon className="h-6 w-6 text-terracotta" strokeWidth={1.5} aria-hidden="true" />
-              <h3 className="mt-4 font-display text-lg text-cocoa">{item.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-            </article>
-          </Reveal>
-        ))}
+    <section
+      aria-label="Diferenciais rápidos"
+      className="bg-cream pb-16 lg:pb-24"
+    >
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
+
+        {/* CABEÇALHO */}
+        <Reveal>
+          <div className="mb-12 max-w-2xl">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
+              DIFERENCIAIS
+            </p>
+
+            <h2 className="mt-4 font-display text-4xl leading-tight text-cocoa sm:text-5xl">
+              Estrutura pensada para o seu conforto e segurança
+            </h2>
+
+          </div>
+        </Reveal>
+
+        {/* CARDS */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {items.map((item, i) => (
+            <Reveal key={item.title} delay={i * 0.08}>
+              <article className="h-full rounded-2xl border border-clay/40 bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-0.5">
+
+                <item.icon
+                  className="h-6 w-6 text-terracotta"
+                  strokeWidth={1.5}
+                  aria-hidden="true"
+                />
+
+                <h3 className="mt-4 font-display text-lg text-cocoa">
+                  {item.title}
+                </h3>
+
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.text}
+                </p>
+
+              </article>
+            </Reveal>
+          ))}
+        </div>
+
       </div>
     </section>
   );
