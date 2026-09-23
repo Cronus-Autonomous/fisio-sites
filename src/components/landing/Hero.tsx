@@ -4,6 +4,7 @@ import heroImage from "@/assets/fachada2.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
 import { Accordion } from "@/components/ui/accordion"
+import SocialProof from "./SocialProof";
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -26,7 +27,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
             className="mt-5 text-[2.1rem] leading-[1.12] tracking-tight text-cocoa sm:text-5xl lg:text-[3.4rem]"
           >
-            Clínica Fisioterapia{" "}
+            Clínica de Fisioterapia{" "}
             <span className="italic text-terracotta">em Londrina</span>,{" "}
           </motion.h1>
 
@@ -36,7 +37,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Tratamentos individualizados, com foco nos resultados que você busca.
+            Atendimento individualizado, com foco nos resultados que você busca
           </motion.p>
 
           <motion.div
@@ -48,6 +49,14 @@ export function Hero() {
             <CTAButton href={whatsappLink(whatsappMessages.hero)} size="lg" withWhatsApp>
               Agendar minha avaliação
             </CTAButton>
+          </motion.div>
+          <motion.div
+            initial={reduced ? false : { opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
+          >
+            <SocialProof/>
           </motion.div>
         </div>
 

@@ -77,6 +77,13 @@ export function BenefitsSection() {
 
         {/* LINHA INFERIOR: CARROSSEL OCUPANDO TODA A LARGURA */}
         <Reveal delay={0.4} className="mt-16 lg:mt-24">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
+                EQUIPE
+              </p>
+
+              <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
+                Conheça nossos fisioterapeutas
+              </h2>
           <div className="w-full">
             <Carrossel />
           </div>

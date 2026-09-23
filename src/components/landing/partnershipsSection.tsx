@@ -4,8 +4,8 @@ import { Reveal } from "./Reveal";
 export function PartnershipsSection() {
   // Arquivos locais na pasta /public/videos/
   const videos = [
-    "/videos/recovery.mov",
-    "/videos/empresas.mov",
+    "https://res.cloudinary.com/xiupvhfs/video/upload/v1790188141/recovery.mov",
+    "https://res.cloudinary.com/xiupvhfs/video/upload/v1790188085/empresas.mp4",
   ];
 
   const cards = [
@@ -69,16 +69,19 @@ export function PartnershipsSection() {
                 "
               >
                 {/* VÍDEO VERTICAL (9:16) NO TOPO */}
-                <div className="relative aspect-[9/16] w-full overflow-hidden bg-black">
-                  <video
-                    src={card.video}
-                    controls
-                    playsInline
-                    preload="metadata"
-                    className="h-full w-full object-cover"
-                  >
-                    Seu navegador não suporta a exibição deste vídeo.
-                  </video>
+                {/* VÍDEO VERTICAL (9:16) */}
+                <div className="mx-auto w-full max-w-[380px] overflow-hidden bg-black">
+                  <div className="relative aspect-[3/4] w-full">
+                    <video
+                      src={card.video}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="h-full w-full object-cover"
+                    >
+                      Seu navegador não suporta a exibição deste vídeo.
+                    </video>
+                  </div>
                 </div>
 
                 {/* TÍTULO + DESCRIÇÃO ABAIXO */}

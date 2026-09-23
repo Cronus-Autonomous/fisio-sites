@@ -14,6 +14,7 @@ import { Footer } from "@/components/landing/Footer";
 import { FloatingWhatsApp } from "@/components/landing/FloatingWhatsApp";
 import { MobileCTA } from "@/components/landing/MobileCTA";
 import { PartnershipsSection } from "@/components/landing/partnershipsSection";
+import { ReforceProgram } from "@/components/landing/ReforceProgram";
 
 const title =
   "Clínica Shoyufisio";
@@ -84,6 +85,7 @@ function Index() {
         <PainPointsSection />
         <TestimonialsSection />
         <BenefitsSection />
+        <ReforceProgram />
         <PartnershipsSection />
         <ProcessSection />
         <LocationSection />

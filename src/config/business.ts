@@ -277,7 +277,7 @@ export const profissionais: TeamMember[] = [
     id: "edson",
     titulo: "Edson (Shoyu)",
     descricao: "Atendimento Domiciliar; Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Ortopédica e Hidroterapia.",
-    imagem: "shoyu.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188445/shoyu.jpg",
   },
   // {
   //   id: "beatriz",
@@ -289,13 +289,13 @@ export const profissionais: TeamMember[] = [
     id: "bianca",
     titulo: "Bianca",
     descricao: "Liberação Miofascial; Pilates; Quiropraxia; Reabilitação Funcional; Fisioterapia Ortopédica e Fisioterapia Geriátrica.",
-    imagem: "bianca.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188445/bianca.jpg",
   },
   {
     id: "gian",
     titulo: "Gian",
     descricao: "Fisioterapia Respiratória; Disfunções Vestibulares; Liberação Miofascial; Fisioterapia Neurológica; Fisioterapia Ortopédica.",
-    imagem: "gian.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188442/gian.jpg",
   },
   // {
   //   id: "giovanna",
@@ -307,7 +307,7 @@ export const profissionais: TeamMember[] = [
     id: "italo",
     titulo: "Italo",
     descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Osteopatia.",
-    imagem: "italo.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188443/italo.jpg",
   },
   // {
   //   id: "jessica",
@@ -319,13 +319,13 @@ export const profissionais: TeamMember[] = [
     id: "joyce",
     titulo: "Joyce",
     descricao: "Drenagem Linfática; Liberação Miofascial, LPF; Massagem Modeladora e Relaxante; Pilates; Quiropraxia; Reflexologia Podal.",
-    imagem: "joyce.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188443/joyce.jpg",
   },
   {
     id: "junior",
     titulo: "Junior",
     descricao: "Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Respiratória.",
-    imagem: "junior.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188443/junior.jpg",
   },
   // {
   //   id: "luciana",
@@ -355,7 +355,7 @@ export const profissionais: TeamMember[] = [
     id: "renan",
     titulo: "Renan",
     descricao: "Disfunções da ATM; Fisioterapia Neurológica; Fisioterapia Ortopédica; Paralisia Facial; Disfunções Vestibulares.",
-    imagem: "renan.jpg",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188443/renan.png",
   },
 ];
 

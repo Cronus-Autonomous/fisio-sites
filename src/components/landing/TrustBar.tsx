@@ -3,10 +3,17 @@ import {
   Layers,
   Sparkles,
   UserRoundCheck,
+  HeartPulse
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 const items = [
+  {
+    icon: HeartPulse,
+    title: "Sempre Disponível Para Você",
+    text: "Nosso horário comercial é de segunda a sexta, das 8h às 18h, e aos sábados, das 8h ao meio-dia, mas sabemos que a rotina nem sempre se encaixa nesses horários. Por isso, também atendemos antes das 8h, depois das 18h, aos sábados em outros horários e até aos domingos. E se for uma urgência, mesmo em datas como Natal e Ano Novo, pode contar com a gente: saúde não tira férias.",
+    destac: true
+  },
   {
     icon: UserRoundCheck,
     title: "Salas com Banheiro Privativo",
@@ -80,7 +87,7 @@ export function TrustBar() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
-              <article className="h-full rounded-2xl border border-clay/40 bg-card p-6 shadow-soft transition-transform duration-300 hover:-translate-y-0.5">
+              <article className={`h-full rounded-2xl border border-clay/40 p-6 shadow-soft transition-transform duration-300 hover:-translate-y-0.5 ${item.destac ? 'bg-emergency' : 'bg-card'}`}>
 
                 <item.icon
                   className="h-6 w-6 text-terracotta"

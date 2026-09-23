@@ -6,6 +6,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import { supabase, type Review } from "@/lib/supabase";
+import { Reveal } from "./Reveal";
 
 function calcularIdade(dataNascimentoStr: string): number | null {
   if (!dataNascimentoStr) return null;
@@ -69,9 +70,18 @@ export function TestimonialsSection() {
 
         {/* CABEÇALHO */}
         <div className="flex items-center justify-between gap-4">
-          <h2 className="text-3xl font-bold text-cocoa text-center sm:text-left">
-            O que dizem nossos pacientes
-          </h2>
+          <Reveal>
+            <div className="mb-12 max-w-2xl">
+              <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
+                Depoimentos
+              </p>
+  
+              <h2 className="mt-4 font-display text-4xl leading-tight text-cocoa sm:text-5xl">
+                O que dizem nossos pacientes
+              </h2>
+  
+            </div>
+          </Reveal>
 
           {/* BOTÕES DE NAVEGAÇÃO */}
           <div className="hidden sm:flex gap-2">
