@@ -11,7 +11,7 @@ const items = [
   {
     icon: HeartPulse,
     title: "Sempre Disponível Para Você",
-    text: "Nosso horário comercial é de segunda a sexta, das 8h às 18h, e aos sábados, das 8h ao meio-dia, mas sabemos que a rotina nem sempre se encaixa nesses horários. Por isso, também atendemos antes das 8h, depois das 18h, aos sábados em outros horários e até aos domingos. E se for uma urgência, mesmo em datas como Natal e Ano Novo, pode contar com a gente: saúde não tira férias.",
+    text: <>Nosso horário comercial é de segunda a sexta, das 8h às 18h, e aos sábados, das 8h ao meio-dia, mas sabemos que a rotina nem sempre se encaixa nesses horários. <strong>Por isso, também atendemos antes das 8h, depois das 18h, aos sábados em outros horários e até aos domingos.</strong>E se for uma urgência, mesmo em datas como Natal e Ano Novo, pode contar com a gente: saúde não tira férias</>,
     destac: true
   },
   {

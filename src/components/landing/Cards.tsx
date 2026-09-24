@@ -11,10 +11,7 @@ export default function TeamCard({
   membro,
   whatsappMessage,
 }: TeamCardProps) {
-  const imagePath = new URL(
-    `${membro.imagem}`,
-    import.meta.url
-  ).href;
+  const imagePath = new URL(`${membro.imagem}`, import.meta.url).href;
 
   return (
     <article className="group flex h-full flex-row overflow-hidden rounded-3xl border border-neutral-100 bg-white shadow-sm transition-all duration-300 hover:shadow-md md:flex-col">
@@ -24,7 +21,7 @@ export default function TeamCard({
         <img
           src={imagePath}
           alt={`Foto de ${membro.titulo}`}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition-transform duration-500"
           loading="lazy"
         />
       </div>
