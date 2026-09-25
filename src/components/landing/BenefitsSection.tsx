@@ -18,7 +18,7 @@ export function BenefitsSection() {
             <div className="overflow-hidden rounded-[2rem] shadow-soft">
               <img
                 src={retrato}
-                alt="Fisioterapia, Hidroterapia, Home Care e Pilates em Londrina"
+                alt="Fisioterapia em Londrina"
                 loading="lazy"
                 width={1200}
                 height={912}

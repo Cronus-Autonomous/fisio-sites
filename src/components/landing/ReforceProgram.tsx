@@ -34,7 +34,7 @@ export function ReforceProgram() {
               </p>
 
               <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
-                mais força, equilíbrio e segurança depois dos 60
+                Mais força, equilíbrio e segurança depois dos 60
               </h2>
             </Reveal>
 

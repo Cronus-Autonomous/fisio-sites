@@ -90,7 +90,7 @@ export function PartnershipsSection() {
                     {card.titulo}
                   </h3>
 
-                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                  <p className="mt-3 text-md leading-relaxed text-muted-foreground">
                     {card.descricao}
                   </p>
                 </div>

@@ -3,7 +3,6 @@ import { useRef } from "react";
 import heroImage from "@/assets/fachada2.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
-import { Accordion } from "@/components/ui/accordion"
 import SocialProof from "./SocialProof";
 
 export function Hero() {
@@ -20,7 +19,6 @@ export function Hero() {
       />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24">
         <div>
-
           <motion.h1
             initial={reduced ? false : { opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -28,7 +26,7 @@ export function Hero() {
             className="mt-5 text-[2.1rem] leading-[1.12] tracking-tight text-cocoa sm:text-5xl lg:text-[3.4rem]"
           >
             Clínica de Fisioterapia{" "}
-            <span className="italic text-terracotta">em Londrina</span>,{" "}
+            <span className="italic text-terracotta">em Londrina</span>{" "}
           </motion.h1>
 
           <motion.p
@@ -59,16 +57,15 @@ export function Hero() {
             <SocialProof/>
           </motion.div>
         </div>
-
         <motion.div style={{ y }} className="relative">
           <div className="overflow-hidden rounded-[2rem] shadow-lift">
             <img
-              src={heroImage}
+              src="https://res.cloudinary.com/xiupvhfs/image/upload/v1790292974/2026-09-24_20-35.png"
               alt="Sala de atendimento do Clínica Shoyufisio, com maca preparada, toalhas e iluminação suave"
               width={1200}
               height={1408}
               fetchPriority="high"
-              className="h-[22rem] w-full object-cover sm:h-[30rem] lg:h-[34rem]"
+              className="h-[22rem] w-full object-cover object-[70%_center] sm:h-[30rem] sm:object-[90%_center]"
             />
           </div>
         </motion.div>

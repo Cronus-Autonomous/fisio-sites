@@ -22,7 +22,7 @@ const items = [
   {
     icon: Layers,
     title: "Estrutura Acessível para PCD e Idosos",
-    text: "Contamos com cadeira de rodas disponível para uso na clínica e banheiro adaptado, para que pessoas com mobilidade reduzida e idosos se sintam confortáveis e bem atendidos.",
+    text: "Contamos com cadeira de rodas, andador, muleta canadense e bengala disponível para uso na clínica e banheiro adaptado, para que pessoas com mobilidade reduzida e idosos se sintam confortáveis e bem atendidos.",
   },
   {
     icon: Sparkles,

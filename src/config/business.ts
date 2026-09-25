@@ -1,6 +1,6 @@
 export const business = {
   name: "Clínica Shoyufisio",
-  tagline: "Fisioterapia • Hidroterapia• Home Care e Pilates",
+  tagline: "Fisioterapia",
   city: "Londrina",
   state: "PR",
   address: {
@@ -15,7 +15,7 @@ export const business = {
   whatsapp: {
     /** Formato internacional, apenas dígitos. */
     number: "5543991127287",
-    display: "+55 43 9112-7287",
+    display: "55 43 9112-7287",
   },
   social: {
     instagram: "https://www.instagram.com/shoyufisio_/",
@@ -279,12 +279,12 @@ export const profissionais: TeamMember[] = [
     descricao: "Atendimento Domiciliar; Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Ortopédica e Hidroterapia.",
     imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188445/shoyu.jpg",
   },
-  // {
-  //   id: "beatriz",
-  //   titulo: "Beatriz",
-  //   descricao: "Aplicação de Taping; Drenagem Linfática; Fisioterapia Pélvica e Obstetrícia; Liberação Miofascial; LPF; Massagem Relaxante; Pilates.",
-  //   imagem: "founder.png",
-  // },
+  {
+    id: "beatriz",
+    titulo: "Beatriz",
+    descricao: "Aplicação de Taping; Drenagem Linfática; Fisioterapia Pélvica e Obstetrícia; Liberação Miofascial; LPF; Massagem Relaxante; Pilates.",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790291698/beatriz.jpg",
+  },
   {
     id: "bianca",
     titulo: "Bianca",
@@ -327,30 +327,30 @@ export const profissionais: TeamMember[] = [
     descricao: "Fisioterapia Geriátrica; Fisioterapia Neurológica; Fisioterapia Respiratória.",
     imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790188443/junior.jpg",
   },
-  // {
-  //   id: "luciana",
-  //   titulo: "Luciana",
-  //   descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Pilates.",
-  //   imagem: "founder.png",
-  // },
-  // {
-  //   id: "maria-eduarda",
-  //   titulo: "Maria Eduarda",
-  //   descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Fisioterapia Ortopédica; Pilates; Fisioterapia Neurológica (Adultos e Idosos).",
-  //   imagem: "founder.png",
-  // },
-  // {
-  //   id: "mayara",
-  //   titulo: "Mayara",
-  //   descricao: "Drenagem Linfática (Pós-operatório); Fisioterapia Obstétrica; Liberação Miofascial; Massagem Relaxante; Fisioterapia Ortopédica; Pilates.",
-  //   imagem: "founder.png",
-  // },
-  // {
-  //   id: "ohana",
-  //   titulo: "Ohana",
-  //   descricao: "Fisioterapia Ortopédica, Pré e Pós-operatório.",
-  //   imagem: "founder.png",
-  // },
+  {
+    id: "luciana",
+    titulo: "Luciana",
+    descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Pilates.",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790292933/luciana.png",
+  },
+  {
+    id: "maria",
+    titulo: "Maria Eduarda",
+    descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Fisioterapia Ortopédica; Pilates; Fisioterapia Neurológica (Adultos e Idosos).",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790292933/maria-eduarda.png",
+  },
+  {
+    id: "mayara",
+    titulo: "Mayara",
+    descricao: "Drenagem Linfática (Pós-operatório); Fisioterapia Obstétrica; Liberação Miofascial; Massagem Relaxante; Fisioterapia Ortopédica; Pilates.",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790292932/mayara.png",
+  },
+  {
+    id: "ohana",
+    titulo: "Ohana",
+    descricao: "Fisioterapia Ortopédica, Pré e Pós-operatório.",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790292932/ohana.png",
+  },
   {
     id: "renan",
     titulo: "Renan",

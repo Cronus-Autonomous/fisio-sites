@@ -30,7 +30,7 @@ export function PainPointsSection() {
                 <span className="mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sand text-terracotta">
                   <Check className="h-3.5 w-3.5" strokeWidth={2} aria-hidden="true" />
                 </span>
-                <span className="text-sm leading-relaxed text-foreground/85">{point}</span>
+                <span className="text-lg leading-relaxed text-foreground/85">{point}</span>
               </li>
             </Reveal>
           ))}
