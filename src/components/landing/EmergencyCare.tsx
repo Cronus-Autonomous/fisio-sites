@@ -16,7 +16,7 @@ export function EmergencyCare() {
         ))} */}
 
         <h3 className="font-display text-lg text-cocoa">
-          Ponvênio e reembolso
+          Convênio e reembolso
         </h3>
       </div>
 

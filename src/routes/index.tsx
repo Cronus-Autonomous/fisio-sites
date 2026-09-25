@@ -16,10 +16,15 @@ import { MobileCTA } from "@/components/landing/MobileCTA";
 import { PartnershipsSection } from "@/components/landing/partnershipsSection";
 import { ReforceProgram } from "@/components/landing/ReforceProgram";
 
-const title =
-  "Clínica Shoyufisio";
+const title = "Clínica Shoyufisio";
+
 const description =
-  "Fisioterapia, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado no Clínica Shoyufisio.";
+  "Fisioterapia, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado na Clínica Shoyufisio.";
+
+// ALTERE PARA O DOMÍNIO REAL DO SEU SITE
+const siteUrl = "https://shoyufisio.com/";
+
+const ogImage = `${siteUrl}/images/og-image.png`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -41,7 +46,13 @@ const jsonLd = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+      ],
       opens: "09:00",
       closes: "19:00",
     },
@@ -57,20 +68,91 @@ const jsonLd = {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-      { property: "og:locale", content: "pt_BR" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description },
+      // SEO
+      {
+        title,
+      },
+      {
+        name: "description",
+        content: description,
+      },
+
+      // Open Graph
+      {
+        property: "og:title",
+        content: title,
+      },
+      {
+        property: "og:description",
+        content: description,
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:url",
+        content: siteUrl,
+      },
+      {
+        property: "og:image",
+        content: ogImage,
+      },
+      {
+        property: "og:image:width",
+        content: "1200",
+      },
+      {
+        property: "og:image:height",
+        content: "630",
+      },
+      {
+        property: "og:image:alt",
+        content: "Clínica Shoyufisio em Londrina",
+      },
+      {
+        property: "og:locale",
+        content: "pt_BR",
+      },
+
+      // Twitter / X
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: title,
+      },
+      {
+        name: "twitter:description",
+        content: description,
+      },
+      {
+        name: "twitter:image",
+        content: ogImage,
+      },
+        {
+        name: "twitter:image:alt",
+        content: "Clínica Shoyufisio em Londrina",
+      },
     ],
-    links: [{ rel: "canonical", href: "/" }],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(jsonLd) }],
+
+    links: [
+      {
+        rel: "canonical",
+        href: siteUrl,
+      },
+    ],
+
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(jsonLd),
+      },
+    ],
   }),
+
   component: Index,
 });
 
@@ -78,6 +160,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
       <main>
         <Hero />
         <ServicesSection />
@@ -91,10 +174,12 @@ function Index() {
         <LocationSection />
         <FinalCTA />
       </main>
+
       <Footer />
       <FloatingWhatsApp />
       <MobileCTA />
     </div>
   );
 }
-//TODO: Implementar o componente de FAQ, caso seja necessário.
+
+// TODO: Implementar o componente de FAQ, caso seja necessário.
