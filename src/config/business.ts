@@ -4,7 +4,7 @@ export const business = {
   city: "Londrina",
   state: "PR",
   address: {
-    street: "Rua Senador Souza Naves, 2129",
+    street: "Rua Senador Souza Naves 2129",
     district: "Jardim Londrilar",
     city: "Londrina",
     state: "PR",
@@ -270,6 +270,20 @@ export interface TeamMember {
   titulo: string;
   descricao: string;
   imagem: string;
+}
+
+export function optimizeCloudinaryImage(
+  url: string,
+  width = 600
+): string {
+  if (!url.includes("res.cloudinary.com")) {
+    return url;
+  }
+
+  return url.replace(
+    "/image/upload/",
+    `/image/upload/f_auto,q_auto,w_${width},dpr_auto/`
+  );
 }
 
 export const profissionais: TeamMember[] = [

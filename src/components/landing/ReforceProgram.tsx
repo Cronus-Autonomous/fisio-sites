@@ -3,7 +3,7 @@ import retrato from "@/assets/founder.png";
 
 export function ReforceProgram() {
   return (
-    <section id="sobre" className="bg-background py-20 lg:py-28">
+    <section id="sobre" className="bg-background py-15 lg:py-15">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         
         {/* LINHA SUPERIOR: IMAGEM (ESQUERDA) E TEXTO (DIREITA) */}

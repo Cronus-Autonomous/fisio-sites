@@ -1,11 +1,16 @@
 import { partnerships } from "@/config/business";
 import { Reveal } from "./Reveal";
+import { LazyVideo } from "./LazyVideo";
 
 export function PartnershipsSection() {
-  // Arquivos locais na pasta /public/videos/
   const videos = [
-    "https://res.cloudinary.com/xiupvhfs/video/upload/v1790188141/recovery.mov",
-    "https://res.cloudinary.com/xiupvhfs/video/upload/v1790188085/empresas.mp4",
+    "https://res.cloudinary.com/xiupvhfs/video/upload/f_auto,q_auto/recovery.mov",
+    "https://res.cloudinary.com/xiupvhfs/video/upload/f_auto,q_auto/empresas.mp4",
+  ];
+
+  const posters = [
+    "https://res.cloudinary.com/xiupvhfs/video/upload/so_0,f_auto,q_auto/recovery.jpg",
+    "https://res.cloudinary.com/xiupvhfs/video/upload/so_0,f_auto,q_auto/empresas.jpg",
   ];
 
   const cards = [
@@ -14,17 +19,19 @@ export function PartnershipsSection() {
       titulo: partnerships[0]?.titulo ?? "",
       descricao: partnerships[0]?.descricao ?? "",
       video: videos[0],
+      poster: posters[0],
     },
     {
       id: partnerships[1]?.id ?? "parceria-2",
       titulo: partnerships[1]?.titulo ?? "",
       descricao: partnerships[1]?.descricao ?? "",
       video: videos[1],
+      poster: posters[1],
     },
   ];
 
   return (
-    <section className="bg-cream py-20 lg:py-28">
+    <section className="bg-cream py-15 lg:py-15">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         {/* CABEÇALHO */}
         <Reveal className="max-w-2xl">
@@ -32,7 +39,7 @@ export function PartnershipsSection() {
             OUTROS SERVIÇOS
           </p>
 
-          <h2 className="mt-4 font-display text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
+          <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-3xl">
             Conheça outros serviços que também fazem parte do nosso trabalho
           </h2>
 
@@ -41,7 +48,7 @@ export function PartnershipsSection() {
           </p>
         </Reveal>
 
-        {/* 2 CARDS LADO A LADO */}
+        {/* CARDS */}
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {cards.map((card, i) => (
             <Reveal
@@ -68,23 +75,17 @@ export function PartnershipsSection() {
                   hover:shadow-lift
                 "
               >
-                {/* VÍDEO VERTICAL (9:16) NO TOPO */}
-                {/* VÍDEO VERTICAL (9:16) */}
+                {/* VÍDEO */}
                 <div className="mx-auto w-full max-w-[380px] overflow-hidden bg-black">
                   <div className="relative aspect-[3/4] w-full">
-                    <video
+                    <LazyVideo
                       src={card.video}
-                      controls
-                      playsInline
-                      preload="metadata"
-                      className="h-full w-full object-cover"
-                    >
-                      Seu navegador não suporta a exibição deste vídeo.
-                    </video>
+                      poster={card.poster}
+                    />
                   </div>
                 </div>
 
-                {/* TÍTULO + DESCRIÇÃO ABAIXO */}
+                {/* TÍTULO + DESCRIÇÃO */}
                 <div className="flex flex-1 flex-col justify-start p-6">
                   <h3 className="font-display text-lg leading-snug text-cocoa">
                     {card.titulo}

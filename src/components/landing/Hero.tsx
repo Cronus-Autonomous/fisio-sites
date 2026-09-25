@@ -12,12 +12,8 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", reduced ? "0%" : "6%"]);
 
   return (
-    <section id="inicio" ref={ref} className="relative overflow-hidden bg-cream pt-28 lg:pt-32">
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-40 -top-32 h-[36rem] w-[36rem] rounded-full bg-sand/70 blur-3xl"
-      />
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24">
+    <section id="inicio" ref={ref} className="relative overflow-hidden bg-cream pt-25 lg:pt-25">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-4 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8 lg:pb-24">
         <div>
           <motion.h1
             initial={reduced ? false : { opacity: 0, y: 18 }}

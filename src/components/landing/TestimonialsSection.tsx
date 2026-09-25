@@ -64,19 +64,19 @@ export function TestimonialsSection() {
   return (
     <section
       id="depoimentos"
-      className="bg-cream py-20 lg:py-28"
+      className="bg-cream py-10 lg:py-10"
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
 
         {/* CABEÇALHO */}
         <div className="flex items-center justify-between gap-4">
           <Reveal>
-            <div className="mb-12 max-w-2xl">
+            <div className="mb-4 max-w-2xl">
               <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
                 Depoimentos
               </p>
   
-              <h2 className="mt-4 font-display text-4xl leading-tight text-cocoa sm:text-5xl">
+              <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-3xl">
                 O que dizem nossos pacientes
               </h2>
   
@@ -106,7 +106,7 @@ export function TestimonialsSection() {
         {/* CARROSSEL */}
         <div
           id="testimonials-carousel"
-          className="mt-12 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6 pt-2 scrollbar-none scroll-smooth"
+          className="mt-4 flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none scroll-smooth"
         >
           {reviews.map((item) => (
             <TestimonialCard

@@ -15,10 +15,10 @@ const points = [
 
 export function PainPointsSection() {
   return (
-    <section className="bg-background py-20 lg:py-28">
+    <section className="bg-background py-15 lg:py-15">
       <div className="mx-auto max-w-5xl px-5 text-center lg:px-8">
         <Reveal>
-          <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
+          <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-3xl">
             Talvez você esteja procurando exatamente isso:
           </h2>
         </Reveal>
@@ -37,16 +37,16 @@ export function PainPointsSection() {
         </ul>
 
         <Reveal delay={0.1}>
-          <p className="mt-12 font-display text-2xl italic text-cocoa sm:text-3xl">
+          <p className="mt-12 font-display text-2xl italic text-cocoa sm:text-2xl">
             Vamos entender o que seu corpo precisa?
           </p>
           <CTAButton
             href={whatsappLink(whatsappMessages.painPoints)}
-            size="lg"
+            size="md"
             withWhatsApp
             className="mt-7"
           >
-            Agendar avaliação pelo WhatsApp
+            Agendar avaliação
           </CTAButton>
         </Reveal>
       </div>

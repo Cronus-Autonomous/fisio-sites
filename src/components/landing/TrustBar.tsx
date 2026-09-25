@@ -11,7 +11,7 @@ const items = [
   {
     icon: HeartPulse,
     title: "Sempre Disponível Para Você",
-    text: <>Nosso horário comercial é de segunda a sexta, das 8h às 18h, e aos sábados, das 8h ao meio-dia, mas sabemos que a rotina nem sempre se encaixa nesses horários. <strong>Por isso, também atendemos antes das 8h, depois das 18h, aos sábados em outros horários e até aos domingos.</strong>E se for uma urgência, mesmo em datas como Natal e Ano Novo, pode contar com a gente: saúde não tira férias</>,
+    text: <>Nosso horário comercial é de segunda a sexta, das 8h às 18h, e aos sábados, das 8h ao meio-dia. <strong>Mas, se precisar, também atendemos antes das 8h, após as 18h, aos sábados em outros horários e aos domingos. </strong>Em caso de urgência, inclusive no Natal e Ano Novo, conte com a gente: saúde não tira férias.</>,
     destac: true
   },
   {
@@ -76,7 +76,7 @@ export function TrustBar() {
               DIFERENCIAIS
             </p>
 
-            <h2 className="mt-4 font-display text-4xl leading-tight text-cocoa sm:text-5xl">
+            <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-3xl">
               Estrutura pensada para o seu conforto e segurança
             </h2>
 
@@ -84,7 +84,7 @@ export function TrustBar() {
         </Reveal>
 
         {/* CARDS */}
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {items.map((item, i) => (
             <Reveal key={item.title} delay={i * 0.08}>
               <article className={`h-full rounded-2xl border border-clay/40 p-6 shadow-soft transition-transform duration-300 hover:-translate-y-0.5 ${item.destac ? 'bg-emergency' : 'bg-card'}`}>

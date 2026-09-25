@@ -6,7 +6,7 @@ import Carrossel from "@/components/landing/Carrossel";
 
 export function BenefitsSection() {
   return (
-    <section id="sobre" className="bg-sand py-20 lg:py-28">
+    <section id="sobre" className="bg-sand py-15 lg:py-15">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         
         {/* LINHA SUPERIOR: IMAGEM (ESQUERDA) E TEXTO (DIREITA) */}
@@ -75,12 +75,12 @@ export function BenefitsSection() {
         </div>
 
         {/* LINHA INFERIOR: CARROSSEL OCUPANDO TODA A LARGURA */}
-        <Reveal delay={0.4} className="mt-16 lg:mt-24">
+        <Reveal delay={0.4} className="mt-10 lg:mt-20">
               <p className="text-[0.7rem] font-medium uppercase tracking-[0.28em] text-terracotta">
                 EQUIPE
               </p>
 
-              <h2 className="mt-4 text-3xl leading-tight tracking-tight text-cocoa sm:text-4xl">
+              <h2 className="text-3xl leading-tight tracking-tight text-cocoa sm:text-3xl">
                 Conheça nossos fisioterapeutas
               </h2>
           <div className="w-full">

@@ -76,9 +76,7 @@ export function Footer() {
           <p className="mt-4 flex items-start gap-2 text-sm text-sand/80">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
             <span>
-              Rua Senador Souza Naves, 2129 — Jardim Londrilar
-              <br />
-              Londrina — PR
+              Rua Senador Souza Naves, 2129 — Jardim Londrilar, Londrina — PR
             </span>
           </p>
         </div>
