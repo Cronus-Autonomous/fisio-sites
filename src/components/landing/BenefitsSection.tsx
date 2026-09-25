@@ -1,6 +1,5 @@
 import { Compass, Home, Target, UserRound } from "lucide-react";
 import { Reveal } from "./Reveal";
-import retrato from "@/assets/founder.png";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { CTAButton } from "./CTAButton";
 import Carrossel from "@/components/landing/Carrossel";  
@@ -17,7 +16,7 @@ export function BenefitsSection() {
           <Reveal>
             <div className="overflow-hidden rounded-[2rem] shadow-soft">
               <img
-                src={retrato}
+                src="https://res.cloudinary.com/xiupvhfs/image/upload/v1790336889/founder.png"
                 alt="Fisioterapia em Londrina"
                 loading="lazy"
                 width={1200}

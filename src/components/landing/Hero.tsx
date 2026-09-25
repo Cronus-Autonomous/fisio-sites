@@ -60,7 +60,7 @@ export function Hero() {
         <motion.div style={{ y }} className="relative">
           <div className="overflow-hidden rounded-[2rem] shadow-lift">
             <img
-              src="https://res.cloudinary.com/xiupvhfs/image/upload/v1790292974/2026-09-24_20-35.png"
+              src="https://res.cloudinary.com/xiupvhfs/image/upload/v1790336889/2026-09-24_20-35.png"
               alt="Sala de atendimento do Clínica Shoyufisio, com maca preparada, toalhas e iluminação suave"
               width={1200}
               height={1408}
