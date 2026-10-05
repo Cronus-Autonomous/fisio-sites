@@ -30,8 +30,8 @@ const loginSchema = z.object({
 const reviewSchema = z.object({
   comentario: z.string().min(10, "Comentário deve ter no mínimo 10 caracteres"),
   nome_cliente: z.string().min(3, "Nome é obrigatório"),
-  data_nascimento: z.string().nonempty("Data de nascimento é obrigatória"),
-  procedimento: z.string().min(3, "Procedimento é obrigatório"),
+  procedimento: z.string().optional(),
+  data_nascimento: z.string().optional(),
 });
 
 type LoginForm = z.infer<typeof loginSchema>;
@@ -119,12 +119,14 @@ function AreaCliente() {
     setSubmitting(true);
 
     try {
-      const { error } = await supabase.from("reviews").insert([
-        {
-          ...data,
-          user_id: session.user.id,
-        },
-      ]);
+      const payload = {
+        ...data,
+        procedimento: data.procedimento || null,
+        data_nascimento: data.data_nascimento || null,
+        user_id: session.user.id,
+      };
+
+      const { error } = await supabase.from("reviews").insert([payload]);
 
       if (error) throw error;
 
@@ -181,7 +183,7 @@ function AreaCliente() {
               (data) => {
                 onLogin(data);
               },
-              (errors) => {
+              () => {
                 toast.error("Preencha e-mail e senha corretamente.");
               }
             )}
@@ -280,7 +282,7 @@ function AreaCliente() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <label className="block text-xs font-semibold uppercase text-cocoa">
-                  Procedimento Realizado
+                  Procedimento Realizado <span className="font-normal text-muted-foreground">(Opcional)</span>
                 </label>
                 <div className="relative mt-1">
                   <Activity className="absolute left-3 top-3 h-4 w-4 text-cocoa/40" />
@@ -297,7 +299,7 @@ function AreaCliente() {
               </div>
               <div>
                 <label className="block text-xs font-semibold uppercase text-cocoa">
-                  Data de Nascimento
+                  Data de Nascimento <span className="font-normal text-muted-foreground">(Opcional)</span>
                 </label>
                 <div className="relative mt-1">
                   <Calendar className="absolute left-3 top-3 h-4 w-4 text-cocoa/40" />
@@ -329,7 +331,7 @@ function AreaCliente() {
             <button
               type="submit"
               disabled={submitting}
-              className="rounded-lg bg-terracotta px-6 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-terracotta/90 disabled:opacity-50"
+              className="rounded-lg bg-terracotta px-6 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-terracotta/90 disabled:opacity-50 cursor-pointer"
             >
               {submitting ? "Publicando..." : "Publicar Comentário"}
             </button>
@@ -349,27 +351,27 @@ function AreaCliente() {
                   key={rev.id}
                   className="flex flex-col gap-4 rounded-xl border border-cocoa/10 bg-cream/20 p-4 sm:flex-row sm:items-center sm:justify-between"
                 >
-                  {/* min-w-0 impede o elemento flex filho de expandir alem do pai */}
                   <div className="min-w-0 flex-1 space-y-1">
-                    <div className="flex items-center gap-2">
-                      <span className="inline-block max-w-full truncate rounded bg-terracotta/10 px-2 py-0.5 text-xs text-terracotta font-medium">
-                        {rev.procedimento}
-                      </span>
-                    </div>
+                    {rev.procedimento && (
+                      <div className="flex items-center gap-2">
+                        <span className="inline-block max-w-full truncate rounded bg-terracotta/10 px-2 py-0.5 text-xs text-terracotta font-medium">
+                          {rev.procedimento}
+                        </span>
+                      </div>
+                    )}
                     
-                    {/* Quebra de linha garantida para o texto */}
                     <p className="text-sm text-cocoa/80 whitespace-pre-wrap break-words">
                       "{rev.comentario}"
                     </p>
                     
                     <p className="text-xs text-muted-foreground break-words">
-                      Cliente: <strong>{rev.nome_cliente}</strong> | Nasc: {rev.data_nascimento}
+                      Cliente: <strong>{rev.nome_cliente}</strong> | Nasc: {rev.data_nascimento || "Não informada"}
                     </p>
                   </div>
 
                   <button
                     onClick={() => handleDeleteReview(rev.id)}
-                    className="flex shrink-0 items-center gap-1 self-end rounded-lg p-2 text-xs font-semibold text-red-600 transition hover:bg-red-50 sm:self-center"
+                    className="flex shrink-0 items-center gap-1 self-end rounded-lg p-2 text-xs font-semibold text-red-600 transition hover:bg-red-50 sm:self-center cursor-pointer"
                   >
                     <Trash2 className="h-4 w-4" /> Excluir
                   </button>
