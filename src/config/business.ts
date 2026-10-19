@@ -323,12 +323,12 @@ export const profissionais: TeamMember[] = [
     descricao: "Liberação Miofascial; Fisioterapia Ortopédica; Osteopatia.",
     imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790336890/italo.jpg",
   },
-  // {
-  //   id: "jessica",
-  //   titulo: "Jessica",
-  //   descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Pilates (Adulto e Infantil).",
-  //   imagem: "founder.png",
-  // },
+  {
+    id: "jessica",
+    titulo: "Jessica",
+    descricao: "Fisioterapia Convencional para Reabilitação, Prevenção e Manutenção da Qualidade de Vida; Pilates (Adulto e Infantil).",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1792272038/jessica.jpg",
+  },
   {
     id: "joyce",
     titulo: "Joyce",
