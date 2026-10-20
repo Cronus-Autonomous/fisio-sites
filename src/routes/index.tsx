@@ -16,13 +16,13 @@ import { MobileCTA } from "@/components/landing/MobileCTA";
 import { PartnershipsSection } from "@/components/landing/partnershipsSection";
 import { ReforceProgram } from "@/components/landing/ReforceProgram";
 
-const title = "Clínica Shoyufisio";
+const title = "Clínica de Fisioterapia em Londrina | Shoyufisio";
 
 const description =
   "Fisioterapia, massoterapia, drenagem linfática, tratamento para lipedema e cuidados pós-operatórios em Londrina. Atendimento individualizado na Clínica Shoyufisio.";
 
 // ALTERE PARA O DOMÍNIO REAL DO SEU SITE
-const siteUrl = "https://shoyufisio.com/";
+const siteUrl = "https://shoyufisio.com";
 
 const ogImage = `${siteUrl}/images/og-image.png`;
 

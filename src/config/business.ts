@@ -248,6 +248,7 @@ export type Partnerships = {
   id: string;
   titulo: string;
   descricao: string;
+  alt: string;
 };
 
 export const partnerships: Partnerships[] = [
@@ -256,12 +257,14 @@ export const partnerships: Partnerships[] = [
     titulo: "Recovery em Eventos Esportivos",
     descricao:
       "Oferecemos recovery para corridas, torneios de vôlei, beach tênis e outros eventos esportivos, levando nossa equipe de fisioterapeutas e toda a estrutura necessária até o local da prova. Os participantes recebem atendimento logo após a atividade física, aliviando a fadiga muscular e acelerando a recuperação. É a opção ideal para organizadores de eventos que querem oferecer um cuidado extra e um diferencial para os atletas e participantes.",
+    alt: "Fisioterapeuta realizando recovery em atleta durante evento esportivo"
   },
   {
     id: "pilates-e-fisioterapia-para-empresas-e-escolas",
     titulo: "Pilates e Fisioterapia para Empresas e Escolas",
     descricao:
       "Empresas que cuidam bem de quem trabalha nelas constroem times mais saudáveis e motivados e é para ajudar nisso que existe essa parceria da Shoyufisio. Fechamos turmas de Pilates na nossa clínica como benefício para os colaboradores, e também podemos levar a fisioterapia laboral até o ambiente de trabalho, com orientações e exercícios de prevenção de dores e lesões. Uma forma simples de mostrar, na prática, que a empresa se importa com o bem-estar de quem faz parte dela.",
+    alt: "Aula de Pilates e fisioterapia corporativa para empresas"
   },
 ];
 

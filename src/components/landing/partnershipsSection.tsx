@@ -20,6 +20,7 @@ export function PartnershipsSection() {
       descricao: partnerships[0]?.descricao ?? "",
       video: videos[0],
       poster: posters[0],
+      
     },
     {
       id: partnerships[1]?.id ?? "parceria-2",
@@ -79,8 +80,9 @@ export function PartnershipsSection() {
                 <div className="mx-auto w-full max-w-[380px] overflow-hidden bg-black">
                   <div className="relative aspect-[3/4] w-full">
                     <LazyVideo
-                      src={card.video}
-                      poster={card.poster}
+                      src={card.video ?? ""}
+                      poster={card.poster ?? ""}
+                      posterAlt={card.titulo}
                     />
                   </div>
                 </div>

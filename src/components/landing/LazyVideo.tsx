@@ -5,12 +5,14 @@ interface LazyVideoProps {
   src: string;
   poster: string;
   className?: string;
+  posterAlt?: string;
 }
 
 export function LazyVideo({
   src,
   poster,
   className = "",
+  posterAlt,
 }: LazyVideoProps) {
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -25,7 +27,7 @@ export function LazyVideo({
         >
           <img
             src={poster}
-            alt=""
+            alt={posterAlt}
             loading="lazy"
             decoding="async"
             className="h-full w-full object-cover"
