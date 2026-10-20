@@ -1,4 +1,5 @@
-import { Instagram, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
+import { InstagramIcon } from "./InstagramIcon"; 
 import { business, whatsappLink, whatsappMessages } from "@/config/business";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -25,7 +26,7 @@ export function Footer() {
               aria-label="Instagram do Clínica Shoyufisio"
               className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-sand/25 transition-colors hover:bg-sand/10"
             >
-              <Instagram className="h-4 w-4" aria-hidden="true" />
+              <InstagramIcon className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
               href={whatsappLink(whatsappMessages.header)}
@@ -84,7 +85,7 @@ export function Footer() {
 
       <div className="border-t border-sand/15">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-xs text-sand/60 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>© 2026 Shoyufisio Fisioterapia Ltda | CNPJ: 47.421.907-0001/98. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Shoyufisio Fisioterapia Ltda | CNPJ: 47.421.907-0001/98. Todos os direitos reservados.</p>
           <div className="flex gap-5">
             <a href="#contato" className="transition-colors hover:text-sand">
               Política de Privacidade

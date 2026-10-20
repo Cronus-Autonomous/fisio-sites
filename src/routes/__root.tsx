@@ -43,18 +43,20 @@ function ErrorComponent({
   error,
   reset,
 }: {
-  error: Error;
+  error: unknown;
   reset: () => void;
 }) {
   console.error(error);
 
   const router = useRouter();
+  const reportedError =
+    error instanceof Error ? error : new Error(String(error));
 
   useEffect(() => {
-    reportLovableError(error, {
+    reportLovableError(reportedError, {
       boundary: "tanstack_root_error_component",
     });
-  }, [error]);
+  }, [reportedError]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -149,9 +151,36 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="pt-BR">
       <head>
         <HeadContent />
+        {/* --- INÍCIO DA TAG DO GOOGLE --- */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=GT-K8GSC2XN"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GT-K8GSC2XN');
+              gtag('config', 'AW-16919748106');
+            `,
+          }}
+        />
+        {/* --- FIM DA TAG DO GOOGLE --- */}
       </head>
 
       <body>
+        {/* --- INÍCIO DO NOSCRIPT DO GOOGLE --- */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GT-K8GSC2XN"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* --- FIM DO NOSCRIPT DO GOOGLE --- */}
         {children}
         <Scripts />
       </body>
