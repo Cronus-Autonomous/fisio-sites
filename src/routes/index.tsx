@@ -24,7 +24,7 @@ const description =
 // ALTERE PARA O DOMÍNIO REAL DO SEU SITE
 const siteUrl = "https://shoyufisio.com";
 
-const ogImage = `${siteUrl}/images/og-image.png`;
+const ogImage = "https://res.cloudinary.com/xiupvhfs/image/upload/c_fill,w_1200,h_630,g_center,f_auto,q_auto/v1790336889/2026-09-24_20-35.png";
 
 const jsonLd = {
   "@context": "https://schema.org",
