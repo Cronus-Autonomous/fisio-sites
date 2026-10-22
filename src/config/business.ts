@@ -374,6 +374,12 @@ export const profissionais: TeamMember[] = [
     descricao: "Disfunções da ATM; Fisioterapia Neurológica; Fisioterapia Ortopédica; Paralisia Facial; Disfunções Vestibulares.",
     imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790336892/renan.png",
   },
+  {
+    id: "rafael",
+    titulo: "Rafael",
+    descricao: "Fisioterapia Geriátrica; Fisioterapia Ortopédica; Liberação Miofascial; Quiropraxia.",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1792677834/rafael.heic",
+  },
 ];
 
 export type GoogleReview = {
