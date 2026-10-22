@@ -359,8 +359,13 @@ export const profissionais: TeamMember[] = [
   {
     id: "mayara",
     titulo: "Mayara",
+<<<<<<< HEAD
     descricao: "Drenagem Linfática (Pós-operatório); Fisioterapia Obstétrica; Liberação Miofascial; Massagem Relaxante; Fisioterapia Ortopédica; Pilates.",
     imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790336891/mayara.png",
+=======
+    descricao: "Disfunções de ATM; Especialista em Coluna Vertebral; Fisioterapia Ortopédica; Liberação miosfascial; Massagem relaxante; Pilates; RPG (Reeducação Postural Global).",
+    imagem: "https://res.cloudinary.com/xiupvhfs/image/upload/v1790292932/mayara.png",
+>>>>>>> dev
   },
   {
     id: "ohana",
