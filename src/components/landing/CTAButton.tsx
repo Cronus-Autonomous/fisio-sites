@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { cn } from "@/lib/utils";
+import { cn, trackWhatsAppConversion } from "@/lib/utils";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 type Props = {
@@ -23,12 +23,20 @@ export function CTAButton({
 }: Props) {
   const isAnchor = href.startsWith("#");
 
+  const handleClick = () => {
+    // Verifica se o link é do WhatsApp antes de rastrear
+    if (href.includes("wa.me")) {
+      trackWhatsAppConversion();
+    }
+  };
+
   return (
     <a
       href={href}
       {...(external && !isAnchor
         ? { target: "_blank", rel: "noopener noreferrer" }
         : {})}
+      onClick={handleClick}
       className={cn(
         "inline-flex items-center justify-center gap-2.5 rounded-full font-medium tracking-wide transition-all duration-300",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",

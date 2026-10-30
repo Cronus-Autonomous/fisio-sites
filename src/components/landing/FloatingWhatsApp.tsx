@@ -1,10 +1,12 @@
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import { trackWhatsAppConversion } from "@/lib/utils";
 
 export function FloatingWhatsApp() {
   return (
     <a
       href={whatsappLink(whatsappMessages.hero)}
+      onClick={trackWhatsAppConversion}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Agende seu atendimento pelo WhatsApp"

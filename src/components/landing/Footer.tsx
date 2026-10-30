@@ -2,6 +2,7 @@ import { MapPin } from "lucide-react";
 import { InstagramIcon } from "./InstagramIcon"; 
 import { business, whatsappLink, whatsappMessages } from "@/config/business";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import { trackWhatsAppConversion } from "@/lib/utils";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -30,6 +31,7 @@ export function Footer() {
             </a>
             <a
               href={whatsappLink(whatsappMessages.header)}
+              onClick={trackWhatsAppConversion}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`WhatsApp ${business.whatsapp.display}`}
@@ -59,6 +61,7 @@ export function Footer() {
             <li>
               <a
                 href={whatsappLink(whatsappMessages.header)}
+                onClick={trackWhatsAppConversion}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-sand"

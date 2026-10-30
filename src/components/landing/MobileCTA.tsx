@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+import { cn, trackWhatsAppConversion } from "@/lib/utils";
 import { whatsappLink, whatsappMessages } from "@/config/business";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -40,6 +40,7 @@ export function MobileCTA() {
     >
       <a
         href={whatsappLink(whatsappMessages.hero)}
+        onClick={trackWhatsAppConversion}
         target="_blank"
         rel="noopener noreferrer"
         className="flex w-full items-center justify-center gap-2.5 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"

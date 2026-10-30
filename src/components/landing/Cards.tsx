@@ -1,6 +1,7 @@
 import { memo } from "react";
 import type { TeamMember } from "@/config/business";
 import { optimizeCloudinaryImage, whatsappLink } from "@/config/business";
+import { trackWhatsAppConversion } from "@/lib/utils";
 
 interface TeamCardProps {
   membro: TeamMember;
@@ -46,6 +47,7 @@ function TeamCard({
           href={whatsappLink(whatsappMessage)}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackWhatsAppConversion}
           className="mt-auto flex w-full items-center justify-center gap-2 rounded-xl bg-terracotta px-3 py-3 text-sm font-semibold text-white transition-colors duration-300 hover:bg-cocoa hover:shadow-lg active:scale-[0.98]"
         >
           Agendar com {membro.titulo.split(" ")[0]}
